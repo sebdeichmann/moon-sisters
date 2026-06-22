@@ -1,0 +1,194 @@
+[
+  {
+    "viewport": "mobile-390",
+    "size": [
+      390,
+      844
+    ],
+    "path": "/",
+    "scroll_width": 488,
+    "client_width": 488,
+    "horizontal_overflow": false,
+    "scroll_height": 12879,
+    "screenshot": "docs/screenshots/responsive-check/mobile-390-home.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nMOON SISTERS\nEin Raum für Frauen, um anzukommen, zu teilen und sich wirklich zu begegnen.\nFrauenkreise, Retreats und Wor"
+  },
+  {
+    "viewport": "mobile-390",
+    "size": [
+      390,
+      844
+    ],
+    "path": "/datenschutz",
+    "scroll_width": 488,
+    "client_width": 488,
+    "horizontal_overflow": false,
+    "scroll_height": 4359,
+    "screenshot": "docs/screenshots/responsive-check/mobile-390-datenschutz.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nDatenschutzerklärung\n1. Verantwortliche Stelle\nVerantwortlich für die Datenverarbeitung auf dieser Website i"
+  },
+  {
+    "viewport": "mobile-390",
+    "size": [
+      390,
+      844
+    ],
+    "path": "/impressum",
+    "scroll_width": 488,
+    "client_width": 488,
+    "horizontal_overflow": false,
+    "scroll_height": 1295,
+    "screenshot": "docs/screenshots/responsive-check/mobile-390-impressum.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nImpressum\nAngaben gemäß § 5 DDG\nMoon Sisters\nJulie Robbins\nDrosselweg 34\n23843 Bad Oldesloe\nDeutschland\nKont"
+  },
+  {
+    "viewport": "mobile-375",
+    "size": [
+      375,
+      812
+    ],
+    "path": "/",
+    "scroll_width": 488,
+    "client_width": 488,
+    "horizontal_overflow": false,
+    "scroll_height": 12879,
+    "screenshot": "docs/screenshots/responsive-check/mobile-375-home.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nMOON SISTERS\nEin Raum für Frauen, um anzukommen, zu teilen und sich wirklich zu begegnen.\nFrauenkreise, Retreats und Wor"
+  },
+  {
+    "viewport": "mobile-375",
+    "size": [
+      375,
+      812
+    ],
+    "path": "/datenschutz",
+    "scroll_width": 488,
+    "client_width": 488,
+    "horizontal_overflow": false,
+    "scroll_height": 4359,
+    "screenshot": "docs/screenshots/responsive-check/mobile-375-datenschutz.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nDatenschutzerklärung\n1. Verantwortliche Stelle\nVerantwortlich für die Datenverarbeitung auf dieser Website i"
+  },
+  {
+    "viewport": "mobile-375",
+    "size": [
+      375,
+      812
+    ],
+    "path": "/impressum",
+    "scroll_width": 488,
+    "client_width": 488,
+    "horizontal_overflow": false,
+    "scroll_height": 1295,
+    "screenshot": "docs/screenshots/responsive-check/mobile-375-impressum.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nImpressum\nAngaben gemäß § 5 DDG\nMoon Sisters\nJulie Robbins\nDrosselweg 34\n23843 Bad Oldesloe\nDeutschland\nKont"
+  },
+  {
+    "viewport": "tablet-768",
+    "size": [
+      768,
+      1024
+    ],
+    "path": "/",
+    "scroll_width": 756,
+    "client_width": 756,
+    "horizontal_overflow": false,
+    "scroll_height": 13293,
+    "screenshot": "docs/screenshots/responsive-check/tablet-768-home.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nMOON SISTERS\nEin Raum für Frauen, um anzukommen, zu teilen und sich wirklich zu begegnen.\nFrauenkreise, Retreats und Wor"
+  },
+  {
+    "viewport": "tablet-768",
+    "size": [
+      768,
+      1024
+    ],
+    "path": "/datenschutz",
+    "scroll_width": 756,
+    "client_width": 756,
+    "horizontal_overflow": false,
+    "scroll_height": 3636,
+    "screenshot": "docs/screenshots/responsive-check/tablet-768-datenschutz.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nDatenschutzerklärung\n1. Verantwortliche Stelle\nVerantwortlich für die Datenverarbeitung auf dieser Website i"
+  },
+  {
+    "viewport": "tablet-768",
+    "size": [
+      768,
+      1024
+    ],
+    "path": "/impressum",
+    "scroll_width": 756,
+    "client_width": 756,
+    "horizontal_overflow": false,
+    "scroll_height": 1305,
+    "screenshot": "docs/screenshots/responsive-check/tablet-768-impressum.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nImpressum\nAngaben gemäß § 5 DDG\nMoon Sisters\nJulie Robbins\nDrosselweg 34\n23843 Bad Oldesloe\nDeutschland\nKont"
+  },
+  {
+    "viewport": "desktop-1440",
+    "size": [
+      1440,
+      1000
+    ],
+    "path": "/",
+    "scroll_width": 1428,
+    "client_width": 1428,
+    "horizontal_overflow": false,
+    "scroll_height": 8349,
+    "screenshot": "docs/screenshots/responsive-check/desktop-1440-home.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nMOON SISTERS\nEin Raum für Frauen, um anzukommen, zu teilen und sich wirklich zu begegnen.\nFrauenkreise, Retreats und Wor"
+  },
+  {
+    "viewport": "desktop-1440",
+    "size": [
+      1440,
+      1000
+    ],
+    "path": "/datenschutz",
+    "scroll_width": 1428,
+    "client_width": 1428,
+    "horizontal_overflow": false,
+    "scroll_height": 3460,
+    "screenshot": "docs/screenshots/responsive-check/desktop-1440-datenschutz.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nDatenschutzerklärung\n1. Verantwortliche Stelle\nVerantwortlich für die Datenverarbeitung auf dieser Website i"
+  },
+  {
+    "viewport": "desktop-1440",
+    "size": [
+      1440,
+      1000
+    ],
+    "path": "/impressum",
+    "scroll_width": 1428,
+    "client_width": 1428,
+    "horizontal_overflow": false,
+    "scroll_height": 1165,
+    "screenshot": "docs/screenshots/responsive-check/desktop-1440-impressum.png",
+    "text_sample": "Moon Sisters\nHome\nAngebote\nÜber uns\nStimmen\nKontakt\nDE\n/\nEN\nRECHTLICHES\nImpressum\nAngaben gemäß § 5 DDG\nMoon Sisters\nJulie Robbins\nDrosselweg 34\n23843 Bad Oldesloe\nDeutschland\nKont"
+  },
+  {
+    "viewport": "mobile-390",
+    "size": [
+      390,
+      844
+    ],
+    "path": "/#language-toggle-en",
+    "html_lang": "en",
+    "h1_after_click_en": "A space for women to arrive, to share and to truly meet one another.",
+    "language_toggle_ok": true,
+    "screenshot": "docs/screenshots/responsive-check/mobile-390-english.png"
+  },
+  {
+    "viewport": "desktop-1440",
+    "size": [
+      1440,
+      1000
+    ],
+    "path": "/#language-toggle-en",
+    "html_lang": "en",
+    "h1_after_click_en": "A space for women to arrive, to share and to truly meet one another.",
+    "language_toggle_ok": true,
+    "screenshot": "docs/screenshots/responsive-check/desktop-1440-english.png"
+  }
+]
