@@ -163,7 +163,7 @@ function Header({ content, language, setLanguage }) {
   return (
     <header className="site-header">
       <a className="brand" href="/#home" aria-label="Moon Sisters Startseite">
-        {content.brand}
+        <img className="brand-logo" src="/assets/moon-sisters-logo.png" alt="" aria-hidden="true" />
       </a>
       <nav className="main-nav" aria-label="Hauptnavigation">
         {content.nav.map((item) => (
@@ -371,10 +371,15 @@ function HomePage({ content, language, setLanguage }) {
 
         <section className="contact section-shell" id="kontakt" aria-labelledby="contact-title">
           <div className="contact-panel">
-            <SectionHeading label={content.contact.label} title={content.contact.title}>
-              {content.contact.text}
-            </SectionHeading>
-            <MailLink className="contact-mail" email={contactEmail}>{contactLabel}</MailLink>
+            <div className="contact-copy">
+              <SectionHeading label={content.contact.label} title={content.contact.title}>
+                {content.contact.text}
+              </SectionHeading>
+              <MailLink className="contact-mail" email={contactEmail}>{contactLabel}</MailLink>
+            </div>
+            <figure className="contact-image image-frame">
+              <img src="/assets/generated/contact-letter-tea-generated.png" alt="Brief, Tee und getrocknete Blumen auf einem warmen Holztisch" loading="lazy" />
+            </figure>
           </div>
         </section>
       </main>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Impressum – Moon Sisters</title><style>:root{color-scheme:light;--bg:#f8f2ea;--surface:#fffaf3;--ink:#30251f;--muted:#78675c;--line:rgba(89,64,48,.18);--accent:#654132;--side:clamp(1rem,4vw,3.4rem);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65;color:var(--ink);background:radial-gradient(circle at top left,#efe1d3 0,transparent 36rem),var(--bg)}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:0 auto;padding:clamp(1rem,3vw,2rem) var(--side) clamp(4rem,8vw,7rem)}header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:clamp(3rem,7vw,5rem)}a{color:inherit;text-underline-offset:.22em}.brand{text-decoration:none;border:1px solid var(--line);background:rgba(255,250,243,.78);border-radius:999px;padding:.65rem 1rem;font-family:Georgia,serif;font-size:1.2rem}.lang{display:flex;gap:.35rem;align-items:center}.lang button{border:1px solid var(--line);border-radius:999px;background:rgba(255,250,243,.78);padding:.5rem .75rem;color:var(--muted);font-weight:700;cursor:pointer}.lang button.active{background:#654132;color:#fff8ed}.label{color:var(--accent);font-size:.76rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;line-height:1.08;letter-spacing:-.03em}h1{font-size:clamp(2.5rem,7vw,5rem);margin:.8rem 0 clamp(2rem,5vw,3.5rem)}h2{font-size:clamp(1.35rem,2.2vw,2rem);margin:0 0 .8rem}section{border-top:1px solid var(--line);padding:1.4rem 0;color:#5d4b40}p{margin:0;white-space:pre-line}p+p{margin-top:.75rem}.en{display:none}body.show-en .de{display:none}body.show-en .en{display:block}footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color:var(--muted)}</style></head>
+<body><div class="wrap"><header><a class="brand" href="/">Moon Sisters</a><div class="lang" role="group" aria-label="Sprache wählen"><button type="button" class="active" data-lang="de">DE</button><button type="button" data-lang="en">EN</button></div></header>
+<main><div class="de"><p class="label">Rechtliches</p><h1>Impressum</h1><section><h2>Angaben gemäß § 5 DDG</h2><p>Moon Sisters
+Julie Robbins
+Drosselweg 34
+23843 Bad Oldesloe
+Deutschland</p></section>
+<section><h2>Kontakt</h2><p>E-Mail: moonsisters.od (at) gmail.com</p></section></div><div class="en"><p class="label">Legal</p><h1>Imprint</h1><section><h2>Information according to § 5 DDG</h2><p>Moon Sisters
+Julie Robbins
+Drosselweg 34
+23843 Bad Oldesloe
+Germany</p></section>
+<section><h2>Contact</h2><p>Email: moonsisters.od (at) gmail.com</p></section></div></main>
+<footer><a href="/">Zurück zur Startseite / Back to home</a><p>© 2026 Moon Sisters. Mit Sorgfalt gemacht.</p></footer></div>
+<script>const b=[...document.querySelectorAll('[data-lang]')];function setLang(l){document.body.classList.toggle('show-en',l==='en');document.documentElement.lang=l;localStorage.setItem('moonSistersLanguage',l);b.forEach(x=>x.classList.toggle('active',x.dataset.lang===l));}b.forEach(x=>x.onclick=()=>setLang(x.dataset.lang));setLang(localStorage.getItem('moonSistersLanguage')||'de');</script></body></html>

@@ -168,8 +168,8 @@ export const siteContent = {
     text: 'Frauenkreise, Retreats & Workshops in Bad Oldesloe, an der Nordsee und online.',
     made: 'Mit Sorgfalt gemacht.',
     legal: [
-      { label: 'Datenschutzerklärung', href: '/datenschutz' },
-      { label: 'Impressum', href: '/impressum' },
+      { label: 'Datenschutzerklärung', href: '/datenschutz/' },
+      { label: 'Impressum', href: '/impressum/' },
     ],
   },
   legal: {

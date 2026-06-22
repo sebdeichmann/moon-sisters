@@ -81,8 +81,8 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3rem, 8vw, 6.8rem);
-  max-width: 10.4ch;
+  font-size: clamp(2.65rem, 5.45vw, 4.85rem);
+  max-width: 12.8ch;
 }
 
 h2 {
@@ -122,16 +122,25 @@ p {
 }
 
 .brand {
+  justify-self: start;
   display: inline-flex;
   align-items: center;
-  min-height: 46px;
-  padding: 0.45rem 1rem;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0.35rem 1.05rem;
   border-radius: var(--radius-sm);
   font-family: Fraunces, Georgia, serif;
   font-size: 1.25rem;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: -0.03em;
+}
+
+.brand-logo {
+  width: clamp(7.4rem, 12vw, 10.2rem);
+  height: auto;
+  max-height: 2.85rem;
+  object-fit: contain;
 }
 
 .main-nav {
@@ -192,16 +201,24 @@ p {
 .section-shell {
   max-width: calc(var(--max) + 2 * var(--side));
   margin: 0 auto;
-  padding: clamp(4.5rem, 9vw, 8rem) var(--side);
+  padding: clamp(3.35rem, 6.8vw, 6rem) var(--side);
+}
+
+.offers,
+.about,
+.testimonials,
+.contact {
+  scroll-margin-top: 8.5rem;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(280px, 0.82fr);
-  align-items: end;
-  gap: clamp(2rem, 6vw, 5rem);
-  min-height: calc(100svh - 78px);
-  padding-top: clamp(3rem, 6vw, 6rem);
+  grid-template-columns: minmax(0, 1.02fr) minmax(300px, 0.78fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4.4rem);
+  min-height: min(760px, calc(100svh - 78px));
+  padding-top: clamp(2rem, 4vw, 4rem);
+  padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
 }
 
 .eyebrow,
@@ -216,20 +233,20 @@ p {
 
 .hero-copy {
   display: grid;
-  gap: 1.35rem;
+  gap: clamp(0.9rem, 1.6vw, 1.2rem);
 }
 
 .hero-lead {
-  max-width: 39rem;
+  max-width: 40rem;
   color: var(--muted-strong);
-  font-size: clamp(1.14rem, 2vw, 1.45rem);
-  line-height: 1.55;
+  font-size: clamp(1.08rem, 1.55vw, 1.28rem);
+  line-height: 1.52;
 }
 
 .hero-body {
-  max-width: 35rem;
+  max-width: 36rem;
   color: var(--muted);
-  font-size: 1.03rem;
+  font-size: 1rem;
 }
 
 .founders {
@@ -261,7 +278,7 @@ p {
 }
 
 .hero-image img {
-  aspect-ratio: 4 / 5.15;
+  aspect-ratio: 4 / 4.65;
   object-fit: cover;
 }
 
@@ -497,39 +514,30 @@ p {
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.85rem, 1.7vw, 1.15rem);
 }
 
 .testimonial-card {
   display: grid;
   align-content: space-between;
-  min-height: 255px;
+  min-height: clamp(190px, 18vw, 230px);
   margin: 0;
-  padding: 1.5rem;
+  padding: clamp(1.2rem, 2vw, 1.55rem);
   border-radius: var(--radius-md);
-}
-
-.testimonial-card:nth-child(1),
-.testimonial-card:nth-child(2) {
-  grid-column: span 2;
-}
-
-.testimonial-card:nth-child(3) {
-  grid-column: span 1;
 }
 
 .testimonial-card:nth-child(4),
 .testimonial-card:nth-child(5) {
-  grid-column: span 2;
+  transform: translateX(calc(50% + clamp(0.42rem, 0.85vw, 0.58rem)));
 }
 
 blockquote {
   margin: 0;
   color: var(--ink);
   font-family: Fraunces, Georgia, serif;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
-  line-height: 1.25;
+  font-size: clamp(1.14rem, 1.55vw, 1.48rem);
+  line-height: 1.32;
   letter-spacing: -0.02em;
 }
 
@@ -541,12 +549,33 @@ figcaption {
 
 .contact-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.72fr);
   align-items: center;
-  gap: 2rem;
-  padding: clamp(1.6rem, 4vw, 3rem);
+  gap: clamp(1.4rem, 4vw, 3rem);
+  padding: clamp(1.2rem, 3vw, 2rem);
   border-radius: var(--radius-lg);
   background: linear-gradient(135deg, rgba(111, 83, 64, 0.09), rgba(255, 250, 243, 0.86));
+}
+
+.contact-copy {
+  display: grid;
+  gap: 1.3rem;
+  padding: clamp(0.35rem, 1.5vw, 1rem);
+}
+
+.contact .section-heading h2 {
+  max-width: 15ch;
+  font-size: clamp(1.85rem, 3.25vw, 2.85rem);
+}
+
+.contact-image {
+  border-radius: 28px;
+  box-shadow: 0 18px 52px rgba(70, 45, 30, 0.12);
+}
+
+.contact-image img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .contact-mail {
@@ -660,6 +689,13 @@ figcaption {
 
   .hero {
     min-height: auto;
+    gap: 1.8rem;
+    padding-top: 2.4rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.45rem, 8.3vw, 4rem);
+    max-width: 13ch;
   }
 
   .hero-image {
@@ -679,6 +715,7 @@ figcaption {
   .testimonial-card:nth-child(4),
   .testimonial-card:nth-child(5) {
     grid-column: auto;
+    transform: none;
   }
 
   .person-card,
@@ -692,6 +729,51 @@ figcaption {
 
   .contact-mail {
     justify-self: start;
+  }
+
+  .contact-copy {
+    padding: 0;
+  }
+
+  .contact .section-heading h2 {
+    font-size: clamp(1.72rem, 8vw, 2.35rem);
+  }
+}
+
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 0.66fr);
+    align-items: center;
+    gap: 1.7rem;
+    padding-top: 2.2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.15rem, 6.1vw, 3.75rem);
+    max-width: 12.5ch;
+  }
+
+  .hero-lead {
+    font-size: 1.02rem;
+  }
+
+  .hero-body {
+    font-size: 0.96rem;
+  }
+
+  .hero-image {
+    max-width: none;
+  }
+}
+@media (min-width: 621px) and (max-width: 900px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial-card:nth-child(4),
+  .testimonial-card:nth-child(5) {
+    transform: none;
   }
 }
 
@@ -710,6 +792,32 @@ figcaption {
 
   .main-nav {
     justify-content: flex-start;
+    gap: 0.7rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .main-nav a {
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .language-toggle,
+  .brand {
+    min-height: 42px;
+  }
+
+  .brand {
+    padding-inline: 0.9rem;
+  }
+
+  .brand-logo {
+    width: 7.2rem;
+    max-height: 2.15rem;
+  }
+
+  .hero.section-shell {
+    padding-top: 2.15rem;
+    padding-bottom: 3.2rem;
   }
 
   .quality-grid {
@@ -721,8 +829,10 @@ figcaption {
     padding-bottom: 4rem;
   }
 
-  h1 {
-    font-size: clamp(2.65rem, 16vw, 4rem);
+  h1,
+  .hero h1 {
+    font-size: clamp(2.22rem, 10vw, 3rem);
+    max-width: 12.5ch;
   }
 
   .hero-lead {
