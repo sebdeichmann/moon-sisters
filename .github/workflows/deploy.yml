@@ -7,7 +7,7 @@ on:
 
 jobs:
   ftp-deploy:
-    name: Build and upload via FTPS
+    name: Build and upload via FTP
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install dependencies
         run: npm install
@@ -32,6 +32,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          protocol: ftps
+          protocol: ftp
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
