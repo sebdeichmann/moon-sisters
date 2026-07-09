@@ -2,9 +2,8 @@ backend:
   name: github
   repo: sebdeichmann/moon-sisters
   branch: main
-  # Für den Live-Login braucht Decap CMS einen GitHub-OAuth-Endpunkt.
-  # Den tragen wir hier ein, sobald Sebastian den OAuth-Dienst eingerichtet hat.
-  # Beispiel: base_url: https://dein-oauth-endpunkt.example.com
+  base_url: https://moon-sisters-decap-oauth.accounts-073.workers.dev
+  auth_endpoint: /auth
 
 media_folder: public/uploads
 public_folder: /uploads
