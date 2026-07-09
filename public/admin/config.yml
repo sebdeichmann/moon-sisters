@@ -1,0 +1,183 @@
+backend:
+  name: github
+  repo: sebdeichmann/moon-sisters
+  branch: main
+  # Für den Live-Login braucht Decap CMS einen GitHub-OAuth-Endpunkt.
+  # Den tragen wir hier ein, sobald Sebastian den OAuth-Dienst eingerichtet hat.
+  # Beispiel: base_url: https://dein-oauth-endpunkt.example.com
+
+media_folder: public/uploads
+public_folder: /uploads
+locale: de
+site_url: https://moon-sisters.de
+display_url: https://moon-sisters.de
+logo_url: /assets/moon-sisters-logo.png
+
+collections:
+  - name: site
+    label: Website-Inhalte
+    files:
+      - name: content
+        label: Moon-Sisters-Seite
+        file: src/content/siteContent.json
+        format: json
+        fields:
+          - { label: Markenname, name: brand, widget: string }
+          - { label: Gründerinnen, name: founders, widget: string }
+          - { label: Kontakt-E-Mail, name: contactEmail, widget: string }
+          - { label: Angezeigter Kontakttext, name: contactLabel, widget: string }
+
+          - label: Navigation
+            name: nav
+            widget: list
+            fields:
+              - { label: Beschriftung, name: label, widget: string }
+              - { label: Link, name: href, widget: string }
+
+          - label: Startbereich
+            name: hero
+            widget: object
+            fields:
+              - { label: Kleine Zeile, name: eyebrow, widget: string }
+              - { label: Überschrift, name: title, widget: text }
+              - { label: Einleitung, name: lead, widget: text }
+              - { label: Text, name: body, widget: text }
+              - { label: Bild, name: image, widget: image }
+              - { label: Bildbeschreibung, name: imageAlt, widget: string }
+
+          - label: Was hier geschieht
+            name: qualities
+            widget: object
+            fields:
+              - { label: Kleine Zeile, name: label, widget: string }
+              - { label: Überschrift, name: title, widget: string }
+              - label: Punkte
+                name: items
+                widget: list
+                fields:
+                  - { label: Titel, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+
+          - label: Angebote
+            name: offers
+            widget: object
+            fields:
+              - { label: Kleine Zeile, name: label, widget: string }
+              - { label: Überschrift, name: title, widget: string }
+              - { label: Einleitung, name: intro, widget: text }
+              - { label: Abschnittsbild, name: circleImage, widget: image }
+              - { label: Abschnittsbild Beschreibung, name: circleImageAlt, widget: string }
+              - label: Angebotskarten
+                name: cards
+                widget: list
+                summary: "{{fields.tag}} · {{fields.title}}"
+                fields:
+                  - { label: Kategorie, name: tag, widget: string }
+                  - { label: Titel, name: title, widget: string }
+                  - { label: Bild, name: image, widget: image }
+                  - { label: Bildbeschreibung, name: imageAlt, widget: string }
+                  - { label: Kurztext, name: intro, widget: text }
+                  - label: Fakten
+                    name: facts
+                    widget: list
+                    fields:
+                      - { label: Label, name: label, widget: string }
+                      - { label: Wert, name: value, widget: string }
+                  - label: Absätze
+                    name: paragraphs
+                    widget: list
+                    field: { label: Absatz, name: paragraph, widget: text }
+                  - { label: Buttontext, name: cta, widget: string }
+                  - { label: E-Mail-Betreff, name: ctaSubject, widget: string }
+                  - { label: Hinweis neben Button, name: note, widget: string, required: false }
+
+          - label: Über uns
+            name: about
+            widget: object
+            fields:
+              - { label: Kleine Zeile, name: label, widget: string }
+              - { label: Überschrift, name: title, widget: string }
+              - { label: Einleitung, name: intro, widget: text }
+              - label: Personen
+                name: people
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Rolle, name: role, widget: string }
+                  - { label: Portrait, name: image, widget: image }
+                  - { label: Portrait-Beschreibung, name: imageAlt, widget: string }
+                  - label: Absätze
+                    name: paragraphs
+                    widget: list
+                    field: { label: Absatz, name: paragraph, widget: text }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Linktext, name: linkLabel, widget: string, required: false }
+
+          - label: Stimmen
+            name: testimonials
+            widget: object
+            fields:
+              - { label: Kleine Zeile, name: label, widget: string }
+              - { label: Überschrift, name: title, widget: string }
+              - label: Zitate
+                name: items
+                widget: list
+                fields:
+                  - { label: Zitat, name: quote, widget: text }
+                  - { label: Autorin, name: author, widget: string }
+
+          - label: Kontakt
+            name: contact
+            widget: object
+            fields:
+              - { label: Kleine Zeile, name: label, widget: string }
+              - { label: Überschrift, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Footer-Text, name: text, widget: text }
+              - { label: Made-with-Text, name: made, widget: string }
+              - label: Rechtliche Links
+                name: legal
+                widget: list
+                fields:
+                  - { label: Beschriftung, name: label, widget: string }
+                  - { label: Link, name: href, widget: string }
+
+          - label: Rechtliches
+            name: legal
+            widget: object
+            collapsed: true
+            fields:
+              - label: Impressum
+                name: impressum
+                widget: object
+                fields:
+                  - { label: Titel, name: title, widget: string }
+                  - label: Abschnitte
+                    name: sections
+                    widget: list
+                    fields:
+                      - { label: Überschrift, name: title, widget: string }
+                      - label: Absätze
+                        name: paragraphs
+                        widget: list
+                        field: { label: Absatz, name: paragraph, widget: text }
+              - label: Datenschutz
+                name: privacy
+                widget: object
+                fields:
+                  - { label: Titel, name: title, widget: string }
+                  - label: Abschnitte
+                    name: sections
+                    widget: list
+                    fields:
+                      - { label: Überschrift, name: title, widget: string }
+                      - label: Absätze
+                        name: paragraphs
+                        widget: list
+                        field: { label: Absatz, name: paragraph, widget: text }
