@@ -151,9 +151,9 @@
             "ctaSubject": "Anmeldung Frauenkreis 4.0"
           }
         ],
-        "cta": "Per E-Mail anfragen",
-        "ctaSubject": "Anfrage Frauenkreise",
-        "note": "Die aktuellen Zyklen findest du direkt hier."
+        "cta": "",
+        "ctaSubject": "",
+        "note": ""
       },
       {
         "tag": "Retreat",
@@ -186,7 +186,7 @@
         ],
         "cta": "Interesse am Retreat anmelden",
         "ctaSubject": "Interesse Retreat zum Durchatmen",
-        "note": "Kosten und weitere Details werden ergänzt."
+        "note": ""
       },
       {
         "tag": "Workshop",
@@ -222,7 +222,7 @@
         ],
         "cta": "Für „Begegnung als Kunst“ anmelden",
         "ctaSubject": "Anmeldung Begegnung als Kunst",
-        "note": "Anmeldung per E-Mail."
+        "note": ""
       }
     ]
   },

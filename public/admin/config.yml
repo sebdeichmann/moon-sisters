@@ -96,8 +96,8 @@ collections:
                       - { label: Termine, name: dates, widget: text }
                       - { label: Buttontext, name: cta, widget: string }
                       - { label: E-Mail-Betreff, name: ctaSubject, widget: string }
-                  - { label: Buttontext, name: cta, widget: string }
-                  - { label: E-Mail-Betreff, name: ctaSubject, widget: string }
+                  - { label: Buttontext, name: cta, widget: string, required: false }
+                  - { label: E-Mail-Betreff, name: ctaSubject, widget: string, required: false }
                   - { label: Hinweis neben Button, name: note, widget: string, required: false }
 
           - label: Über uns
