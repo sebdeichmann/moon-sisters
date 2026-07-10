@@ -71,7 +71,8 @@ button:focus-visible {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Fraunces, Georgia, serif;
   font-weight: 500;
   line-height: 1.08;
@@ -151,6 +152,11 @@ p {
   min-height: 46px;
   padding: 0.35rem 0.8rem;
   border-radius: var(--radius-sm);
+}
+
+.main-nav::-webkit-scrollbar,
+.testimonial-grid::-webkit-scrollbar {
+  height: 0;
 }
 
 .main-nav a,
@@ -280,6 +286,7 @@ p {
 .hero-image img {
   aspect-ratio: 4 / 4.65;
   object-fit: cover;
+  object-position: center center;
 }
 
 .section-heading {
@@ -374,15 +381,33 @@ p {
   background: linear-gradient(135deg, rgba(255, 250, 243, 0.94), rgba(243, 229, 214, 0.76));
 }
 
+.offer-card-featured {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1fr);
+  grid-template-rows: auto;
+  align-items: stretch;
+}
+
 .offer-card-image {
   margin: calc(-1 * clamp(1.45rem, 3vw, 2.5rem)) calc(-1 * clamp(1.45rem, 3vw, 2.5rem)) 0;
   border-radius: var(--radius-lg) var(--radius-lg) 26px 26px;
   box-shadow: none;
 }
 
+.offer-card-featured .offer-card-image {
+  margin: calc(-1 * clamp(1.45rem, 3vw, 2.5rem)) 0 calc(-1 * clamp(1.45rem, 3vw, 2.5rem)) calc(-1 * clamp(1.45rem, 3vw, 2.5rem));
+  border-radius: var(--radius-lg) 26px 26px var(--radius-lg);
+}
+
 .offer-card-image img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+.offer-card-featured .offer-card-image img {
+  height: 100%;
+  min-height: 100%;
+  aspect-ratio: auto;
 }
 
 .offer-card-copy {
@@ -429,6 +454,37 @@ p {
   font-family: Fraunces, Georgia, serif;
   font-size: 1.08rem;
   line-height: 1.25;
+}
+
+.cycle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 0.15rem;
+}
+
+.cycle-card {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  border: 1px solid rgba(143, 96, 74, 0.2);
+  border-radius: 20px;
+  background: rgba(255, 250, 243, 0.82);
+}
+
+.cycle-card h4 {
+  font-size: 1.28rem;
+}
+
+.cycle-card p {
+  color: var(--muted-strong);
+  font-size: 0.96rem;
+}
+
+.text-link {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
 }
 
 .cta-row {
@@ -513,23 +569,24 @@ p {
 }
 
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   gap: clamp(0.85rem, 1.7vw, 1.15rem);
+  overflow-x: auto;
+  padding: 0.2rem 0 1rem;
+  scroll-snap-type: x proximity;
+  scrollbar-color: rgba(143, 96, 74, 0.4) rgba(255, 250, 243, 0.5);
+  scrollbar-width: thin;
 }
 
 .testimonial-card {
   display: grid;
   align-content: space-between;
+  flex: 0 0 clamp(280px, 31vw, 390px);
   min-height: clamp(190px, 18vw, 230px);
   margin: 0;
   padding: clamp(1.2rem, 2vw, 1.55rem);
   border-radius: var(--radius-md);
-}
-
-.testimonial-card:nth-child(4),
-.testimonial-card:nth-child(5) {
-  transform: translateX(calc(50% + clamp(0.42rem, 0.85vw, 0.58rem)));
+  scroll-snap-align: start;
 }
 
 blockquote {
@@ -676,6 +733,7 @@ figcaption {
     justify-self: stretch;
     justify-content: center;
     overflow-x: auto;
+    scrollbar-width: none;
   }
 
   .hero,
@@ -704,18 +762,28 @@ figcaption {
   }
 
   .offer-facts,
-  .testimonial-grid {
+  .cycle-grid {
     grid-template-columns: 1fr;
   }
 
-  .testimonial-card,
-  .testimonial-card:nth-child(1),
-  .testimonial-card:nth-child(2),
-  .testimonial-card:nth-child(3),
-  .testimonial-card:nth-child(4),
-  .testimonial-card:nth-child(5) {
+  .offer-card-featured {
     grid-column: auto;
-    transform: none;
+    grid-template-columns: 1fr;
+  }
+
+  .offer-card-featured .offer-card-image {
+    margin: calc(-1 * clamp(1.45rem, 3vw, 2.5rem)) calc(-1 * clamp(1.45rem, 3vw, 2.5rem)) 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 26px 26px;
+  }
+
+  .offer-card-featured .offer-card-image img {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    min-height: 0;
+  }
+
+  .testimonial-card {
+    flex-basis: min(82vw, 360px);
   }
 
   .person-card,
@@ -767,13 +835,8 @@ figcaption {
   }
 }
 @media (min-width: 621px) and (max-width: 900px) {
-  .testimonial-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .testimonial-card:nth-child(4),
-  .testimonial-card:nth-child(5) {
-    transform: none;
+  .testimonial-card {
+    flex-basis: min(44vw, 360px);
   }
 }
 

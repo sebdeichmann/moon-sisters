@@ -86,6 +86,16 @@ collections:
                     name: paragraphs
                     widget: list
                     field: { label: Absatz, name: paragraph, widget: text }
+                  - label: Frauenkreis-Zyklen
+                    name: cycles
+                    widget: list
+                    required: false
+                    summary: "{{fields.title}}"
+                    fields:
+                      - { label: Titel, name: title, widget: string }
+                      - { label: Termine, name: dates, widget: text }
+                      - { label: Buttontext, name: cta, widget: string }
+                      - { label: E-Mail-Betreff, name: ctaSubject, widget: string }
                   - { label: Buttontext, name: cta, widget: string }
                   - { label: E-Mail-Betreff, name: ctaSubject, widget: string }
                   - { label: Hinweis neben Button, name: note, widget: string, required: false }

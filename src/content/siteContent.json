@@ -2,7 +2,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Schreib uns – wir freuen uns.",
-    "text": "Du möchtest dich für einen Frauenkreis anmelden, hast Interesse am Retreat oder eine Frage zum Workshop? Schreib uns gern eine kurze Nachricht."
+    "text": "Du möchtest dich für einen Frauenkreis anmelden, Interesse am Retreat zeigen oder dich für „Begegnung als Kunst“ anmelden? Schreib uns gern eine kurze Nachricht."
   },
   "nav": [
     {
@@ -31,7 +31,7 @@
   "about": {
     "label": "Über uns",
     "title": "Die Moon Sisters",
-    "intro": "Zwei Frauen, zwei Wege – ein gemeinsamer Raum. Wir bringen unsere jeweilige Arbeit, unsere Erfahrungen und unsere unterschiedlichen Perspektiven in die Moon Sisters ein.",
+    "intro": "Wir sind Julie & Nina. Uns verbindet die Freude daran, Räume zu öffnen, in denen Menschen sich selbst und einander auf ehrliche, achtsame und lebendige Weise begegnen können.",
     "people": [
       {
         "name": "Julie Robbins",
@@ -39,8 +39,8 @@
         "image": "/assets/julie.jpg",
         "imageAlt": "Portrait Julie Robbins",
         "paragraphs": [
-          "Julie arbeitet mit Frauen, die spüren, dass etwas in ihrem Leben in Bewegung kommen will – ohne dass sich schon ganz klar zeigt, was es ist.",
-          "In ihren 1:1-Sessions und längeren Begleitungen entsteht ein ruhiger, klarer Raum, in dem du dich nicht erklären musst. Es geht weniger ums Reparieren, mehr darum, dem, was schon da ist, wirklich zu begegnen."
+          "Julie bringt eine warme, ruhige und klare Begleitung mit. Ihr ist wichtig, dass Frauen in ihrem eigenen Tempo ankommen dürfen – ohne sich erklären oder funktionieren zu müssen.",
+          "In den Moon Sisters hält sie Raum für Selbstwahrnehmung, kreativen Ausdruck und ehrlichen Austausch: körpernah, achtsam und mit liebevoller Struktur."
         ],
         "link": "https://julierobbins.org",
         "linkLabel": "Mehr zu Julie →"
@@ -51,18 +51,18 @@
         "image": "/assets/nina.jpg",
         "imageAlt": "Portrait Nina Horn",
         "paragraphs": [
-          "Nina begleitet Menschen einzeln und als Paar in Fragen rund um Beziehung, Emotionen und das Gestalten eines eigenen, stimmigen Wegs – auch jenseits klassischer Modelle.",
-          "Sie arbeitet klar, warmherzig und mit viel Erfahrung. In den Moon Sisters bringt sie diese Haltung in den Kreis: Raum für ehrliches Sprechen, für Lebendigkeit und für echte Verbindung."
+          "Nina begleitet Menschen mit viel Erfahrung, Klarheit und Warmherzigkeit in Fragen rund um Beziehung, Emotionen und stimmige Lebensgestaltung.",
+          "Bei den Moon Sisters bringt sie Leichtigkeit, Tiefe und den Blick für Verbindung ein – damit ein Raum entstehen kann, der vertraulich, lebendig und zugleich klar gehalten ist."
         ],
         "link": "https://ninahorn.de",
         "linkLabel": "Mehr zu Nina →"
       }
     ]
   },
-  "contactLabel": "moonsisters.od (at) gmail.com",
+  "contactLabel": "info (at) moon-sisters.de",
   "testimonials": {
     "label": "Stimmen",
-    "title": "Was Frauen mitnehmen",
+    "title": "Stimmen aus unseren Räumen",
     "items": [
       {
         "quote": "Brauchst du einen Frauenkreis in tiefer Verbundenheit, Entspannung, eine gewisse Magie? Dann geh unbedingt zu den Moon Sisters.",
@@ -83,85 +83,84 @@
       {
         "quote": "Hier wird dein Gedankenkarussell komprimiert und du gehst beseelt nach Hause.",
         "author": "Teilnehmerin"
+      },
+      {
+        "quote": "Ein Raum, wo ich mir selbst und zugleich anderen Frauen offen begegnen kann. Das hat eine ganz besondere Energie.",
+        "author": "Teilnehmerin"
+      },
+      {
+        "quote": "Ein Ort, an dem ich ankommen und zur Ruhe kommen kann. Ein Ort, an dem ich gehört werde und höre.",
+        "author": "Teilnehmerin"
+      },
+      {
+        "quote": "Ihr seid meine Achtsamkeitsmusen!",
+        "author": "Teilnehmerin"
+      },
+      {
+        "quote": "Gegenseitige Inspiration, Warmherzigkeit, Verstehen, Spaß und Lebensfreude geben Mut und Kraft.",
+        "author": "Teilnehmerin"
       }
     ]
   },
   "offers": {
     "label": "Angebote",
-    "title": "Frauenkreise, Retreat & Workshops",
-    "intro": "Geschützte, klar gehaltene und doch offene Räume für Verbindung, Reflexion und gemeinsames Erleben. Strukturiert genug, um zu tragen – offen genug, um zu lassen, was sich zeigt.",
+    "title": "Frauenkreise, Retreats und Workshops",
+    "intro": "Unsere Angebote laden dich ein, aus dem Alltag herauszutreten und wieder bei dir anzukommen. Manchmal still, manchmal bewegt, manchmal im Austausch, manchmal im gemeinsamen Lachen. Immer mit dem Wunsch, einen Raum zu schaffen, in dem du dich sicher, gesehen und verbunden fühlen kannst.",
     "circleImage": "/assets/altar.jpg",
     "circleImageAlt": "Ruhiger Altar im Frauenkreis mit Kerzen und Blumen",
     "cards": [
       {
-        "paragraphs": [
-          "Die einzelnen Abende gehören zu einem gemeinsamen Durchlauf. Wir teilen, was uns gerade bewegt, hören einander zu und machen Erfahrungen, die verbinden und befreien.",
-          "Klar gerahmt, vertraulich und ohne Leistungsdruck."
-        ],
-        "facts": [
-          {
-            "label": "Termine",
-            "value": "31.8., 7.9., 14.9., 21.9., 28.9., 5.10."
-          },
-          {
-            "label": "Zeit",
-            "value": "montags, 19:30 Uhr"
-          },
-          {
-            "label": "Ort",
-            "value": "BELLA DONNA HAUS"
-          },
-          {
-            "label": "Beitrag",
-            "value": "150 €"
-          }
-        ],
-        "intro": "Ein gemeinsamer Durchlauf für Frauen, die sich nach echter Begegnung sehnen – mit anderen und mit sich selbst.",
-        "imageAlt": "Vorbereiteter Frauenkreis mit Sitzkissen",
-        "cta": "Für Frauenkreis 3.0 anmelden",
-        "note": "Anmeldung per E-Mail.",
-        "title": "Frauenkreis 3.0",
-        "tag": "Fortlaufender Kreis",
+        "tag": "Frauenkreise",
+        "title": "Frauenkreise",
         "image": "/assets/circle-cushions.jpg",
-        "ctaSubject": "Anmeldung Frauenkreis 3.0"
-      },
-      {
-        "paragraphs": [
-          "Auch hier gehören die Termine zusammen: sechs Abende als gemeinsamer Kreis, in dem Vertrauen wachsen und Begegnung tiefer werden kann.",
-          "Du darfst kommen, wie du bist – ohne Bewertung, ohne Muss."
-        ],
+        "imageAlt": "Frauenkreis mit achtsamer Atmosphäre",
+        "intro": "Ein regelmäßiger Raum für Frauen, die ankommen, auftanken und sich selbst und anderen ehrlich begegnen möchten.",
         "facts": [
           {
-            "label": "Termine",
-            "value": "26.10., 2.11., 9.11., 16.11., 23.11., 30.11."
+            "label": "Ort",
+            "value": "BELLA DONNA HAUS"
           },
           {
             "label": "Zeit",
             "value": "montags, 19:30 Uhr"
           },
           {
-            "label": "Ort",
-            "value": "BELLA DONNA HAUS"
+            "label": "Kosten",
+            "value": "150 €"
           },
           {
-            "label": "Beitrag",
-            "value": "150 €"
+            "label": "Anmeldung",
+            "value": "per E-Mail"
           }
         ],
-        "intro": "Der nächste Durchlauf im Herbst – für Verbindung, Reflexion und achtsames Miteinander.",
-        "imageAlt": "Ruhiger Frauenkreis mit Kissen und Kerzen",
-        "cta": "Für Frauenkreis 4.0 anmelden",
-        "note": "Anmeldung per E-Mail.",
-        "title": "Frauenkreis 4.0",
-        "tag": "Fortlaufender Kreis",
-        "image": "/assets/generated/womens-circle-cushions-generated.png",
-        "ctaSubject": "Anmeldung Frauenkreis 4.0"
+        "paragraphs": [
+          "Unsere Frauenkreise sind achtsam gehaltene Abende mit Meditation, Körperwahrnehmung, Bewegung, kreativem Ausdruck und Austausch. Du musst nichts können, nichts leisten und nichts Bestimmtes mitbringen.",
+          "Es geht darum, bei dir anzukommen, dich selbst wahrzunehmen, gehört zu werden und in Verbindung mit anderen Frauen zu sein. Die Gruppen finden in festen Zyklen statt. So entsteht Vertrautheit, Tiefe und ein Raum, der über mehrere Abende hinweg wachsen darf."
+        ],
+        "cycles": [
+          {
+            "title": "Frauenkreis 3.0",
+            "dates": "31.8., 7.9., 14.9., 21.9., 28.9., 5.10.",
+            "cta": "Für Frauenkreis 3.0 anmelden",
+            "ctaSubject": "Anmeldung Frauenkreis 3.0"
+          },
+          {
+            "title": "Frauenkreis 4.0",
+            "dates": "26.10., 2.11., 9.11., 16.11., 23.11., 30.11.",
+            "cta": "Für Frauenkreis 4.0 anmelden",
+            "ctaSubject": "Anmeldung Frauenkreis 4.0"
+          }
+        ],
+        "cta": "Per E-Mail anfragen",
+        "ctaSubject": "Anfrage Frauenkreise",
+        "note": "Die aktuellen Zyklen findest du direkt hier."
       },
       {
-        "paragraphs": [
-          "Gemeinsam ankommen und einfach sein, auftanken, zur Ruhe kommen und neue Kraft sammeln.",
-          "Mit Verbindung, Körperwahrnehmung, achtsamem Miteinander – und gemeinsamem Kochen, Essen, Lachen und Genießen. Du kannst allein kommen oder gemeinsam mit einer Freundin."
-        ],
+        "tag": "Retreat",
+        "title": "Retreat zum Durchatmen",
+        "image": "/assets/generated/retreat-northsea-generated.png",
+        "imageAlt": "Ruhige Nordsee-Landschaft als Stimmung für das Frauen-Retreat",
+        "intro": "Ein nährendes Wochenende für Frauen – zum Durchatmen, Auftanken, einfach Sein und in Gemeinschaft sein.",
         "facts": [
           {
             "label": "Datum",
@@ -173,48 +172,57 @@
           },
           {
             "label": "Gruppe",
-            "value": "max. 10 Frauen plus Julie & Nina"
+            "value": "ca. 10 Teilnehmerinnen plus Julie & Nina"
           },
           {
-            "label": "Verpflegung",
-            "value": "Selbstverpflegung"
+            "label": "Kosten",
+            "value": "werden ergänzt"
           }
         ],
-        "intro": "Ein Wochenende zum Weichwerden, Erinnern und Durchatmen – mit Zeit für dich und Raum für Gemeinschaft.",
-        "imageAlt": "Ruhige Nordsee-Landschaft als Stimmung für das Frauen-Retreat",
+        "paragraphs": [
+          "Unser Retreat lädt dich ein, für ein Wochenende aus dem Alltag auszusteigen und bei dir anzukommen. Wir schaffen einen warmen, gemütlichen Rahmen mit Zeit für Achtsamkeit, Bewegung, Austausch, Ruhe, Kreativität und gemeinsames Essen.",
+          "Es geht nicht darum, etwas zu erreichen. Es geht darum, Raum zu haben: für dich, für Verbindung, für Stille, für Lebendigkeit und für das, was dich gerade stärkt.",
+          "Mit gemeinsamem Kochen, Selbstversorgung, achtsamen Impulsen, Bewegung und Raum für Ruhe, Verbindung und Gemeinschaft."
+        ],
         "cta": "Interesse am Retreat anmelden",
-        "note": "Details folgen.",
-        "title": "Frauen-Retreat zum Durchatmen",
-        "tag": "Retreat",
-        "image": "/assets/generated/retreat-northsea-generated.png",
-        "ctaSubject": "Interesse Frauen-Retreat zum Durchatmen"
+        "ctaSubject": "Interesse Retreat zum Durchatmen",
+        "note": "Kosten und weitere Details werden ergänzt."
       },
       {
-        "paragraphs": [
-          "Ein Nachmittagsraum für Frauen, die Begegnung nicht als Technik, sondern als etwas Lebendiges verstehen möchten: aufmerksam, ehrlich und mit Neugier auf das, was entsteht."
-        ],
+        "tag": "Workshop",
+        "title": "Begegnung als Kunst",
+        "image": "/assets/generated/workshop-begegnung-generated.png",
+        "imageAlt": "Kreativer Workshop mit Farbe und Begegnung",
+        "intro": "Was passiert, wenn Begegnung selbst zum Kunstwerk wird?",
         "facts": [
           {
-            "label": "Datum",
-            "value": "12. September 2026"
+            "label": "Termin",
+            "value": "Samstag, 12. September 2026"
           },
           {
             "label": "Zeit",
             "value": "14–17 Uhr"
           },
           {
-            "label": "Rahmen",
-            "value": "Frauenkulturtage Bad Oldesloe"
+            "label": "Ort",
+            "value": "BELLA DONNA HAUS – Ein Haus von Frauen e.V."
+          },
+          {
+            "label": "Kosten",
+            "value": "29 € p. P. / 50 € für zwei Personen"
+          },
+          {
+            "label": "Inklusive",
+            "value": "Tee, Snacks und Material"
           }
         ],
-        "intro": "Ein Workshop im Rahmen der Frauenkulturtage Bad Oldesloe – für Begegnung, Wahrnehmung und lebendigen Austausch.",
-        "imageAlt": "Ruhiger Workshop-Tisch mit Papier, Stiften und Tee",
-        "cta": "Zum Workshop anfragen",
-        "note": "Weitere Infos per E-Mail.",
-        "title": "Begegnung als Kunst",
-        "tag": "Workshop",
-        "image": "/assets/generated/workshop-begegnung-generated.png",
-        "ctaSubject": "Anfrage Workshop Begegnung als Kunst"
+        "paragraphs": [
+          "Mit einfachen künstlerischen Impulsen, Farbe und spielerischer Interaktion entsteht ein gemeinsames Kunstwerk. Der Workshop lädt dazu ein, Verbindung einmal anders zu erleben – kreativ, leicht, achtsam und ohne künstlerischen Leistungsdruck.",
+          "Offen für Einzelpersonen, Paare, Freundschaften, Geschwister und alle, die Lust haben, Begegnung auf neue Weise zu erfahren. Mit Julie & Nina von Moon Sisters."
+        ],
+        "cta": "Für „Begegnung als Kunst“ anmelden",
+        "ctaSubject": "Anmeldung Begegnung als Kunst",
+        "note": "Anmeldung per E-Mail."
       }
     ]
   },
@@ -231,7 +239,7 @@
         {
           "title": "Kontakt",
           "paragraphs": [
-            "E-Mail: moonsisters.od (at) gmail.com"
+            "E-Mail: info (at) moon-sisters.de"
           ]
         }
       ]
@@ -243,7 +251,7 @@
           "title": "1. Verantwortliche Stelle",
           "paragraphs": [
             "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
-            "Moon Sisters\nJulie Robbins\nDrosselweg 34\n23843 Bad Oldesloe\nDeutschland\nE-Mail: moonsisters.od (at) gmail.com"
+            "Moon Sisters\nJulie Robbins\nDrosselweg 34\n23843 Bad Oldesloe\nDeutschland\nE-Mail: info (at) moon-sisters.de"
           ]
         },
         {
@@ -320,11 +328,11 @@
   },
   "hero": {
     "eyebrow": "Moon Sisters",
-    "title": "Ein Raum für Frauen, um anzukommen, zu teilen und sich wirklich zu begegnen.",
-    "lead": "Frauenkreise, Retreats und Workshops in Norddeutschland – für Verbindung, Tiefe und gemeinsames Erleben.",
-    "body": "Hier ist Platz für das, was du gerade trägst. Ohne Bewertung, ohne Erwartung. Ein Ort, an dem du sein darfst, wie du bist – und der Raum hält, was sich zeigen möchte.",
+    "title": "Räume für Frauen, die sich selbst und einander ehrlich begegnen möchten.",
+    "lead": "Frauenkreise, Retreats und Workshops mit Achtsamkeit, Bewegung, Kreativität und ehrlichem Austausch – gehalten von Julie & Nina.",
+    "body": "Wir öffnen Räume, in denen du ankommen darfst – bei dir selbst, in deinem Körper und in Verbindung mit anderen. Mit Achtsamkeit, Bewegung, kreativem Ausdruck, Austausch und einer warmen, getragenen Atmosphäre.",
     "image": "/assets/julie-nina.jpg",
-    "imageAlt": "Julie Robbins und Nina Horn, Gründerinnen von Moon Sisters"
+    "imageAlt": "Julie und Nina von Moon Sisters"
   },
   "footer": {
     "text": "Frauenkreise, Retreats & Workshops in Bad Oldesloe, an der Nordsee und auch online.",
@@ -340,34 +348,34 @@
       }
     ]
   },
-  "contactEmail": "moonsisters.od@gmail.com",
+  "contactEmail": "info@moon-sisters.de",
   "qualities": {
     "label": "Was hier geschieht",
-    "title": "Ein klarer Raum – für das, was zwischen Frauen entstehen kann.",
+    "title": "Ein klarer Raum – zum Ankommen, Teilen und Lebendigsein.",
     "items": [
       {
-        "title": "sprechen",
-        "text": "Was wirklich da ist – ohne Filter."
+        "title": "Ankommen",
+        "text": "Ein Raum, in dem du nichts leisten musst. Du darfst da sein, zur Ruhe kommen und spüren, was gerade in dir lebendig ist."
       },
       {
-        "title": "zuhören",
-        "text": "Anderen Frauen mit voller Präsenz begegnen."
+        "title": "Verbindung",
+        "text": "Ehrlicher Austausch, Zuhören und Gesehenwerden – vertraulich, achtsam und ohne Druck."
       },
       {
-        "title": "sich sicher fühlen",
-        "text": "Vertraulich, getragen, ohne Druck."
+        "title": "Lebendigkeit",
+        "text": "Bewegung, Kreativität, Körperwahrnehmung und kleine Rituale bringen dich in Kontakt mit dir und der Gruppe."
       },
       {
-        "title": "gesehen werden",
-        "text": "Mit dem, was du mitbringst."
+        "title": "Sich sicher fühlen",
+        "text": "Ein warm gehaltener Rahmen, in dem du dich zeigen darfst – leise, klar, vorsichtig oder ganz unfertig."
       },
       {
-        "title": "Verbindung erleben",
-        "text": "Echt, ehrlich, auf Augenhöhe."
+        "title": "Ehrlich teilen",
+        "text": "Mit dem, was gerade da ist. Ohne etwas beweisen, erklären oder sofort lösen zu müssen."
       },
       {
-        "title": "ohne Druck da sein",
-        "text": "Du musst nichts leisten oder lösen."
+        "title": "Gemeinsam erleben",
+        "text": "Durch Achtsamkeit, Bewegung, Kreativität und Begegnung entsteht ein Raum, der trägt."
       }
     ]
   }

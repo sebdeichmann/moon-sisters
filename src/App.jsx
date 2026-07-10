@@ -115,6 +115,69 @@ const translations = {
   '9. Beschwerderecht bei einer Aufsichtsbehörde': '9. Right to lodge a complaint with a supervisory authority',
   '10. Datensicherheit': '10. Data security',
   '11. Stand und Änderungen dieser Datenschutzerklärung': '11. Status and changes to this privacy policy',
+
+
+  // Updated July 2026 copy
+  'Räume für Frauen, die sich selbst und einander ehrlich begegnen möchten.': 'Spaces for women who want to meet themselves and one another honestly.',
+  'Frauenkreise, Retreats und Workshops mit Achtsamkeit, Bewegung, Kreativität und ehrlichem Austausch – gehalten von Julie & Nina.': 'Women’s circles, retreats and workshops with mindfulness, movement, creativity and honest exchange – held by Julie & Nina.',
+  'Wir öffnen Räume, in denen du ankommen darfst – bei dir selbst, in deinem Körper und in Verbindung mit anderen. Mit Achtsamkeit, Bewegung, kreativem Ausdruck, Austausch und einer warmen, getragenen Atmosphäre.': 'We open spaces where you are invited to arrive – in yourself, in your body and in connection with others. With mindfulness, movement, creative expression, exchange and a warm, held atmosphere.',
+  'Julie und Nina von Moon Sisters': 'Julie and Nina from Moon Sisters',
+  'Ein klarer Raum – zum Ankommen, Teilen und Lebendigsein.': 'A clear space – to arrive, share and feel alive.',
+  'Ankommen': 'Arriving',
+  'Ein Raum, in dem du nichts leisten musst. Du darfst da sein, zur Ruhe kommen und spüren, was gerade in dir lebendig ist.': 'A space where you do not have to perform. You may simply be here, become quiet and sense what is alive in you right now.',
+  'Verbindung': 'Connection',
+  'Ehrlicher Austausch, Zuhören und Gesehenwerden – vertraulich, achtsam und ohne Druck.': 'Honest exchange, listening and being seen – confidential, mindful and without pressure.',
+  'Lebendigkeit': 'Aliveness',
+  'Bewegung, Kreativität, Körperwahrnehmung und kleine Rituale bringen dich in Kontakt mit dir und der Gruppe.': 'Movement, creativity, body awareness and small rituals bring you into contact with yourself and the group.',
+  'Sich sicher fühlen': 'Feeling safe',
+  'Ein warm gehaltener Rahmen, in dem du dich zeigen darfst – leise, klar, vorsichtig oder ganz unfertig.': 'A warmly held frame where you may show yourself – quietly, clearly, carefully or still unfinished.',
+  'Ehrlich teilen': 'Sharing honestly',
+  'Mit dem, was gerade da ist. Ohne etwas beweisen, erklären oder sofort lösen zu müssen.': 'With whatever is present. Without having to prove, explain or immediately solve anything.',
+  'Gemeinsam erleben': 'Experiencing together',
+  'Durch Achtsamkeit, Bewegung, Kreativität und Begegnung entsteht ein Raum, der trägt.': 'Through mindfulness, movement, creativity and encounter, a space emerges that can hold.',
+  'Frauenkreise, Retreats und Workshops': 'Women’s circles, retreats and workshops',
+  'Unsere Angebote laden dich ein, aus dem Alltag herauszutreten und wieder bei dir anzukommen. Manchmal still, manchmal bewegt, manchmal im Austausch, manchmal im gemeinsamen Lachen. Immer mit dem Wunsch, einen Raum zu schaffen, in dem du dich sicher, gesehen und verbunden fühlen kannst.': 'Our offerings invite you to step out of everyday life and arrive back in yourself. Sometimes quiet, sometimes moving, sometimes in exchange, sometimes in shared laughter. Always with the wish to create a space where you can feel safe, seen and connected.',
+  'Frauenkreise': 'Women’s circles',
+  'Frauenkreis mit achtsamer Atmosphäre': 'Women’s circle with a mindful atmosphere',
+  'Ein regelmäßiger Raum für Frauen, die ankommen, auftanken und sich selbst und anderen ehrlich begegnen möchten.': 'A regular space for women who want to arrive, recharge and meet themselves and others honestly.',
+  'Kosten': 'Cost',
+  'Anmeldung': 'Registration',
+  'per E-Mail': 'by email',
+  'Unsere Frauenkreise sind achtsam gehaltene Abende mit Meditation, Körperwahrnehmung, Bewegung, kreativem Ausdruck und Austausch. Du musst nichts können, nichts leisten und nichts Bestimmtes mitbringen.': 'Our women’s circles are mindfully held evenings with meditation, body awareness, movement, creative expression and exchange. You do not have to know, perform or bring anything specific.',
+  'Es geht darum, bei dir anzukommen, dich selbst wahrzunehmen, gehört zu werden und in Verbindung mit anderen Frauen zu sein. Die Gruppen finden in festen Zyklen statt. So entsteht Vertrautheit, Tiefe und ein Raum, der über mehrere Abende hinweg wachsen darf.': 'It is about arriving in yourself, sensing yourself, being heard and being in connection with other women. The groups take place in fixed cycles, allowing familiarity, depth and a space that can grow over several evenings.',
+  'Per E-Mail anfragen': 'Enquire by email',
+  'Die aktuellen Zyklen findest du direkt hier.': 'You can find the current cycles right here.',
+  'Retreat zum Durchatmen': 'Retreat to Breathe',
+  'Ein nährendes Wochenende für Frauen – zum Durchatmen, Auftanken, einfach Sein und in Gemeinschaft sein.': 'A nourishing weekend for women – to breathe, recharge, simply be and be in community.',
+  'ca. 10 Teilnehmerinnen plus Julie & Nina': 'approx. 10 participants plus Julie & Nina',
+  'werden ergänzt': 'to be added',
+  'Unser Retreat lädt dich ein, für ein Wochenende aus dem Alltag auszusteigen und bei dir anzukommen. Wir schaffen einen warmen, gemütlichen Rahmen mit Zeit für Achtsamkeit, Bewegung, Austausch, Ruhe, Kreativität und gemeinsames Essen.': 'Our retreat invites you to step out of everyday life for a weekend and arrive in yourself. We create a warm, cosy frame with time for mindfulness, movement, exchange, rest, creativity and shared meals.',
+  'Es geht nicht darum, etwas zu erreichen. Es geht darum, Raum zu haben: für dich, für Verbindung, für Stille, für Lebendigkeit und für das, was dich gerade stärkt.': 'It is not about achieving something. It is about having space: for yourself, for connection, for stillness, for aliveness and for what strengthens you right now.',
+  'Mit gemeinsamem Kochen, Selbstversorgung, achtsamen Impulsen, Bewegung und Raum für Ruhe, Verbindung und Gemeinschaft.': 'With shared cooking, self-catering, mindful impulses, movement and space for rest, connection and community.',
+  'Interesse am Retreat anmelden': 'Register interest in the retreat',
+  'Kosten und weitere Details werden ergänzt.': 'Cost and further details will be added.',
+  'Was passiert, wenn Begegnung selbst zum Kunstwerk wird?': 'What happens when encounter itself becomes a work of art?',
+  'Kreativer Workshop mit Farbe und Begegnung': 'Creative workshop with colour and encounter',
+  'Termin': 'Date',
+  'Samstag, 12. September 2026': 'Saturday, 12 September 2026',
+  'BELLA DONNA HAUS – Ein Haus von Frauen e.V.': 'BELLA DONNA HAUS – Ein Haus von Frauen e.V.',
+  '29 € p. P. / 50 € für zwei Personen': '€29 per person / €50 for two people',
+  'Inklusive': 'Included',
+  'Tee, Snacks und Material': 'Tea, snacks and materials',
+  'Mit einfachen künstlerischen Impulsen, Farbe und spielerischer Interaktion entsteht ein gemeinsames Kunstwerk. Der Workshop lädt dazu ein, Verbindung einmal anders zu erleben – kreativ, leicht, achtsam und ohne künstlerischen Leistungsdruck.': 'With simple artistic impulses, colour and playful interaction, a shared artwork emerges. The workshop invites you to experience connection in a different way – creative, light, mindful and without artistic pressure to perform.',
+  'Offen für Einzelpersonen, Paare, Freundschaften, Geschwister und alle, die Lust haben, Begegnung auf neue Weise zu erfahren. Mit Julie & Nina von Moon Sisters.': 'Open to individuals, couples, friends, siblings and anyone who wants to experience encounter in a new way. With Julie & Nina from Moon Sisters.',
+  'Für „Begegnung als Kunst“ anmelden': 'Register for “Encounter as Art”',
+  'Wir sind Julie & Nina. Uns verbindet die Freude daran, Räume zu öffnen, in denen Menschen sich selbst und einander auf ehrliche, achtsame und lebendige Weise begegnen können.': 'We are Julie & Nina. We are connected by the joy of opening spaces where people can meet themselves and one another in an honest, mindful and lively way.',
+  'Julie bringt eine warme, ruhige und klare Begleitung mit. Ihr ist wichtig, dass Frauen in ihrem eigenen Tempo ankommen dürfen – ohne sich erklären oder funktionieren zu müssen.': 'Julie brings warm, calm and clear guidance. It matters to her that women can arrive at their own pace – without having to explain themselves or function.',
+  'In den Moon Sisters hält sie Raum für Selbstwahrnehmung, kreativen Ausdruck und ehrlichen Austausch: körpernah, achtsam und mit liebevoller Struktur.': 'In Moon Sisters, she holds space for self-awareness, creative expression and honest exchange: body-based, mindful and with loving structure.',
+  'Nina begleitet Menschen mit viel Erfahrung, Klarheit und Warmherzigkeit in Fragen rund um Beziehung, Emotionen und stimmige Lebensgestaltung.': 'Nina supports people with experience, clarity and warmth in questions around relationships, emotions and coherent life design.',
+  'Bei den Moon Sisters bringt sie Leichtigkeit, Tiefe und den Blick für Verbindung ein – damit ein Raum entstehen kann, der vertraulich, lebendig und zugleich klar gehalten ist.': 'At Moon Sisters, she brings lightness, depth and an eye for connection – so that a space can emerge that is confidential, lively and clearly held.',
+  'Stimmen aus unseren Räumen': 'Voices from our spaces',
+  'Ein Raum, wo ich mir selbst und zugleich anderen Frauen offen begegnen kann. Das hat eine ganz besondere Energie.': 'A space where I can openly meet myself and other women at the same time. It has a very special energy.',
+  'Ein Ort, an dem ich ankommen und zur Ruhe kommen kann. Ein Ort, an dem ich gehört werde und höre.': 'A place where I can arrive and become quiet. A place where I am heard and where I listen.',
+  'Ihr seid meine Achtsamkeitsmusen!': 'You are my mindfulness muses!',
+  'Gegenseitige Inspiration, Warmherzigkeit, Verstehen, Spaß und Lebensfreude geben Mut und Kraft.': 'Mutual inspiration, warmth, understanding, fun and joy of life give courage and strength.',
+  'Du möchtest dich für einen Frauenkreis anmelden, Interesse am Retreat zeigen oder dich für „Begegnung als Kunst“ anmelden? Schreib uns gern eine kurze Nachricht.': 'Would you like to register for a women’s circle, show interest in the retreat or register for “Encounter as Art”? Feel free to send us a short message.',
 };
 
 function translateValue(value, language) {
@@ -223,7 +286,7 @@ function Footer({ content, language }) {
 
 function OfferCard({ offer, contactEmail }) {
   return (
-    <article className="offer-card soft-panel">
+    <article className={`offer-card soft-panel${offer.cycles ? ' offer-card-featured' : ''}`}>
       <figure className="image-frame offer-card-image">
         <img src={offer.image} alt={offer.imageAlt} loading="lazy" />
       </figure>
@@ -242,6 +305,19 @@ function OfferCard({ offer, contactEmail }) {
         {offer.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
+        {offer.cycles && (
+          <div className="cycle-grid" aria-label="Aktuelle Frauenkreis-Zyklen">
+            {offer.cycles.map((cycle) => (
+              <article className="cycle-card" key={cycle.title}>
+                <h4>{cycle.title}</h4>
+                <p><strong>Termine:</strong> {cycle.dates}</p>
+                <MailLink className="text-link" email={contactEmail} subject={cycle.ctaSubject}>
+                  {cycle.cta}
+                </MailLink>
+              </article>
+            ))}
+          </div>
+        )}
         <div className="cta-row">
           <MailLink className="button" email={contactEmail} subject={offer.ctaSubject}>
             {offer.cta}
