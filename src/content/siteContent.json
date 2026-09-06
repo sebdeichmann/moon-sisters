@@ -191,8 +191,9 @@
       {
         "tag": "Workshop",
         "title": "Begegnung als Kunst",
-        "image": "/assets/generated/workshop-begegnung-generated.png",
-        "imageAlt": "Kreativer Workshop mit Farbe und Begegnung",
+        "image": "/assets/generated/workshop-begegnung-poster-2026.png",
+        "imageAlt": "Poster für den Workshop Begegnung als Kunst mit Datum, Ort und zwei abstrahierten Figuren aus coral- und dunkelblauen Farbspuren",
+        "imageFit": "contain",
         "intro": "Was passiert, wenn Begegnung selbst zum Kunstwerk wird?",
         "facts": [
           {

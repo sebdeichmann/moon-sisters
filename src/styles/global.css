@@ -404,6 +404,14 @@ p {
   object-fit: cover;
 }
 
+.offer-card-poster .offer-card-image {
+  background: #f3e5d6;
+}
+
+.offer-card-poster .offer-card-image img {
+  object-fit: contain;
+}
+
 .offer-card-featured .offer-card-image img {
   height: 100%;
   min-height: 100%;

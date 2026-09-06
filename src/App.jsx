@@ -286,7 +286,7 @@ function Footer({ content, language }) {
 
 function OfferCard({ offer, contactEmail }) {
   return (
-    <article className={`offer-card soft-panel${offer.cycles ? ' offer-card-featured' : ''}`}>
+    <article className={`offer-card soft-panel${offer.cycles ? ' offer-card-featured' : ''}${offer.imageFit === 'contain' ? ' offer-card-poster' : ''}`}>
       <figure className="image-frame offer-card-image">
         <img src={offer.image} alt={offer.imageAlt} loading="lazy" />
       </figure>
