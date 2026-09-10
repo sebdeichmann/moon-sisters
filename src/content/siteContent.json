@@ -110,6 +110,39 @@
     "circleImageAlt": "Ruhiger Altar im Frauenkreis mit Kerzen und Blumen",
     "cards": [
       {
+        "id": "frauenabend-29-09",
+        "featured": true,
+        "tag": "Frauenabend",
+        "title": "Frauenabend – Ein Abend zum Ankommen",
+        "image": "/assets/generated/frauenabend-ankommen-poster-2026.png",
+        "imageAlt": "Moon-Sisters-Poster für den Frauenabend mit Kerze, Blumen, Tee und Kreativmaterial in warmer Atmosphäre",
+        "imageFit": "contain",
+        "intro": "Vielleicht sehnst du dich gerade nach ein bisschen weniger Müssen. Nach einer Stunde, in der du nicht funktionieren, leisten oder irgendwo ankommen musst.",
+        "facts": [
+          {
+            "label": "Termin",
+            "value": "29. September 2026 · 19:30 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Bella Donna Haus · Bad Oldesloe"
+          },
+          {
+            "label": "Kosten",
+            "value": "kostenlos"
+          }
+        ],
+        "paragraphs": [
+          "Mit kleinen Impulsen aus Bewegung, Begegnung, Kreativität und Stille laden wir dich ein, für eine Stunde aus dem Alltag auszusteigen und wieder ein bisschen mehr bei dir anzukommen.",
+          "Du kannst alleine kommen, jemanden mitbringen, Moon Sisters schon kennen oder zum allerersten Mal dabei sein.",
+          "Der Abend steht für sich. Und vielleicht macht er Lust auf mehr.",
+          "Alle Frauen sind willkommen. 🏳️‍🌈"
+        ],
+        "cta": "Platz sichern",
+        "ctaSubject": "Anmeldung Frauenabend 29.09.",
+        "note": ""
+      },
+      {
         "tag": "Frauenkreise",
         "title": "Frauenkreise",
         "image": "/assets/circle-cushions.jpg",

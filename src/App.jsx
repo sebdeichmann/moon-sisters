@@ -167,6 +167,18 @@ const translations = {
   'Mit einfachen künstlerischen Impulsen, Farbe und spielerischer Interaktion entsteht ein gemeinsames Kunstwerk. Der Workshop lädt dazu ein, Verbindung einmal anders zu erleben – kreativ, leicht, achtsam und ohne künstlerischen Leistungsdruck.': 'With simple artistic impulses, colour and playful interaction, a shared artwork emerges. The workshop invites you to experience connection in a different way – creative, light, mindful and without artistic pressure to perform.',
   'Offen für Einzelpersonen, Paare, Freundschaften, Geschwister und alle, die Lust haben, Begegnung auf neue Weise zu erfahren. Mit Julie & Nina von Moon Sisters.': 'Open to individuals, couples, friends, siblings and anyone who wants to experience encounter in a new way. With Julie & Nina from Moon Sisters.',
   'Für „Begegnung als Kunst“ anmelden': 'Register for “Encounter as Art”',
+  'Frauenabend': 'Women’s evening',
+  'Frauenabend – Ein Abend zum Ankommen': 'Women’s Evening – An Evening to Arrive',
+  'Moon-Sisters-Poster für den Frauenabend mit Kerze, Blumen, Tee und Kreativmaterial in warmer Atmosphäre': 'Moon Sisters poster for the women’s evening with a candle, flowers, tea and creative materials in a warm atmosphere',
+  'Vielleicht sehnst du dich gerade nach ein bisschen weniger Müssen. Nach einer Stunde, in der du nicht funktionieren, leisten oder irgendwo ankommen musst.': 'Perhaps you are longing for a little less having to. For an hour in which you do not need to function, perform or arrive anywhere.',
+  '29. September 2026 · 19:30 Uhr': '29 September 2026 · 7:30 pm',
+  'Bella Donna Haus · Bad Oldesloe': 'Bella Donna Haus · Bad Oldesloe',
+  'kostenlos': 'free of charge',
+  'Mit kleinen Impulsen aus Bewegung, Begegnung, Kreativität und Stille laden wir dich ein, für eine Stunde aus dem Alltag auszusteigen und wieder ein bisschen mehr bei dir anzukommen.': 'With small impulses from movement, encounter, creativity and stillness, we invite you to step out of everyday life for an hour and arrive a little more fully with yourself again.',
+  'Du kannst alleine kommen, jemanden mitbringen, Moon Sisters schon kennen oder zum allerersten Mal dabei sein.': 'You can come on your own, bring someone along, already know Moon Sisters or be joining us for the very first time.',
+  'Der Abend steht für sich. Und vielleicht macht er Lust auf mehr.': 'The evening stands on its own. And perhaps it will make you curious for more.',
+  'Alle Frauen sind willkommen. 🏳️‍🌈': 'All women are welcome. 🏳️‍🌈',
+  'Platz sichern': 'Reserve a place',
   'Wir sind Julie & Nina. Uns verbindet die Freude daran, Räume zu öffnen, in denen Menschen sich selbst und einander auf ehrliche, achtsame und lebendige Weise begegnen können.': 'We are Julie & Nina. We are connected by the joy of opening spaces where people can meet themselves and one another in an honest, mindful and lively way.',
   'Julie bringt eine warme, ruhige und klare Begleitung mit. Ihr ist wichtig, dass Frauen in ihrem eigenen Tempo ankommen dürfen – ohne sich erklären oder funktionieren zu müssen.': 'Julie brings warm, calm and clear guidance. It matters to her that women can arrive at their own pace – without having to explain themselves or function.',
   'In den Moon Sisters hält sie Raum für Selbstwahrnehmung, kreativen Ausdruck und ehrlichen Austausch: körpernah, achtsam und mit liebevoller Struktur.': 'In Moon Sisters, she holds space for self-awareness, creative expression and honest exchange: body-based, mindful and with loving structure.',
@@ -286,7 +298,7 @@ function Footer({ content, language }) {
 
 function OfferCard({ offer, contactEmail }) {
   return (
-    <article className={`offer-card soft-panel${offer.cycles ? ' offer-card-featured' : ''}${offer.imageFit === 'contain' ? ' offer-card-poster' : ''}`}>
+    <article id={offer.id} className={`offer-card soft-panel${offer.cycles || offer.featured ? ' offer-card-featured' : ''}${offer.imageFit === 'contain' ? ' offer-card-poster' : ''}`}>
       <figure className="image-frame offer-card-image">
         <img src={offer.image} alt={offer.imageAlt} loading="lazy" />
       </figure>
@@ -409,7 +421,7 @@ function HomePage({ content, language, setLanguage }) {
 
           <div className="offer-grid">
             {content.offers.cards.map((offer) => (
-              <OfferCard key={offer.title} offer={offer} contactEmail={contactEmail} />
+              <OfferCard key={offer.id ?? offer.title} offer={offer} contactEmail={contactEmail} />
             ))}
           </div>
         </section>

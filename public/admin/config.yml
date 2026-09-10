@@ -71,10 +71,13 @@ collections:
                 widget: list
                 summary: "{{fields.tag}} · {{fields.title}}"
                 fields:
+                  - { label: Direkter Link-Anker, name: id, widget: string, required: false, hint: "Optional, z. B. frauenabend-29-09. Der Link lautet dann #frauenabend-29-09." }
+                  - { label: Als erstes Angebot hervorheben, name: featured, widget: boolean, required: false, default: false }
                   - { label: Kategorie, name: tag, widget: string }
                   - { label: Titel, name: title, widget: string }
                   - { label: Bild, name: image, widget: image }
                   - { label: Bildbeschreibung, name: imageAlt, widget: string }
+                  - { label: Bilddarstellung, name: imageFit, widget: select, required: false, default: cover, options: [cover, contain], hint: "Für ein vollständiges Poster ‚contain‘ wählen." }
                   - { label: Kurztext, name: intro, widget: text }
                   - label: Fakten
                     name: facts
