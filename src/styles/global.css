@@ -217,6 +217,10 @@ p {
   scroll-margin-top: 8.5rem;
 }
 
+.offer-card {
+  scroll-margin-top: 11rem;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(300px, 0.78fr);

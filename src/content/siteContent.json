@@ -2,7 +2,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Schreib uns – wir freuen uns.",
-    "text": "Du möchtest dich für einen Frauenkreis anmelden, Interesse am Retreat zeigen oder dich für „Begegnung als Kunst“ anmelden? Schreib uns gern eine kurze Nachricht."
+    "text": "Du möchtest dich für einen Frauenkreis anmelden, hast Interesse am Retreat oder eine Frage? Schreib uns gern eine kurze Nachricht."
   },
   "nav": [
     {
@@ -114,8 +114,8 @@
         "featured": true,
         "tag": "Frauenabend",
         "title": "Frauenabend – Ein Abend zum Ankommen",
-        "image": "/assets/generated/frauenabend-ankommen-poster-2026.png",
-        "imageAlt": "Moon-Sisters-Poster für den Frauenabend mit Kerze, Blumen, Tee und Kreativmaterial in warmer Atmosphäre",
+        "image": "/assets/generated/frauenabend-29-09-motiv-2026.webp",
+        "imageAlt": "Gestaltetes Moon-Sisters-Motiv für den Frauenabend mit Blumen, Kerze, Tee und Kreativmaterial",
         "imageFit": "contain",
         "intro": "Vielleicht sehnst du dich gerade nach ein bisschen weniger Müssen. Nach einer Stunde, in der du nicht funktionieren, leisten oder irgendwo ankommen musst.",
         "facts": [
@@ -125,7 +125,7 @@
           },
           {
             "label": "Ort",
-            "value": "Bella Donna Haus · Bad Oldesloe"
+            "value": "BELLA DONNA HAUS · Bad Oldesloe"
           },
           {
             "label": "Kosten",
@@ -140,7 +140,8 @@
         ],
         "cta": "Platz sichern",
         "ctaSubject": "Anmeldung Frauenabend 29.09.",
-        "note": ""
+        "note": "",
+        "expiresAfter": "2026-09-29"
       },
       {
         "tag": "Frauenkreise",
@@ -172,12 +173,6 @@
         ],
         "cycles": [
           {
-            "title": "Frauenkreis 3.0",
-            "dates": "31.8., 7.9., 14.9., 21.9., 28.9., 5.10.",
-            "cta": "Für Frauenkreis 3.0 anmelden",
-            "ctaSubject": "Anmeldung Frauenkreis 3.0"
-          },
-          {
             "title": "Frauenkreis 4.0",
             "dates": "26.10., 2.11., 9.11., 16.11., 23.11., 30.11.",
             "cta": "Für Frauenkreis 4.0 anmelden",
@@ -191,9 +186,9 @@
       {
         "tag": "Retreat",
         "title": "Retreat zum Durchatmen",
-        "image": "/assets/generated/retreat-northsea-generated.png",
-        "imageAlt": "Ruhige Nordsee-Landschaft als Stimmung für das Frauen-Retreat",
-        "intro": "Ein nährendes Wochenende für Frauen – zum Durchatmen, Auftanken, einfach Sein und in Gemeinschaft sein.",
+        "image": "/assets/generated/retreat-november-2026-poster.webp",
+        "imageAlt": "Moon-Sisters-Motiv für das Frauen-Retreat in der Alten Schule Bordelum",
+        "intro": "Ein Retreat für Frauen, die mehr bei sich ankommen wollen.",
         "facts": [
           {
             "label": "Datum",
@@ -205,58 +200,26 @@
           },
           {
             "label": "Gruppe",
-            "value": "ca. 10 Teilnehmerinnen plus Julie & Nina"
+            "value": "8–10 Teilnehmerinnen plus Julie & Nina"
           },
           {
             "label": "Kosten",
-            "value": "werden ergänzt"
+            "value": "444 € für die ersten vier Anmeldungen, danach 484 €"
           }
         ],
         "paragraphs": [
-          "Unser Retreat lädt dich ein, für ein Wochenende aus dem Alltag auszusteigen und bei dir anzukommen. Wir schaffen einen warmen, gemütlichen Rahmen mit Zeit für Achtsamkeit, Bewegung, Austausch, Ruhe, Kreativität und gemeinsames Essen.",
-          "Es geht nicht darum, etwas zu erreichen. Es geht darum, Raum zu haben: für dich, für Verbindung, für Stille, für Lebendigkeit und für das, was dich gerade stärkt.",
-          "Mit gemeinsamem Kochen, Selbstversorgung, achtsamen Impulsen, Bewegung und Raum für Ruhe, Verbindung und Gemeinschaft."
+          "Ein Wochenende zum Ankommen. Bewegen. Tanzen. Ausruhen. Gestalten. Kochen. Genießen. Berühren und berührt werden. Draußen sein. Spielen. Feiern. Still werden.",
+          "Und mit viel Raum dazwischen.",
+          "Dieses Retreat ist für dich, wenn du dich danach sehnst, wieder mehr in deinem eigenen Leben anzukommen – es mit allen Sinnen zu erfahren, dich darin lebendig zu fühlen und es aus dir heraus zu gestalten.",
+          "Wenn du klarer spüren möchtest: Was ist meins – und was nicht? Was brauche ich? Was möchte ich? Wo ist mein Ja, mein Nein oder mein Vielleicht?",
+          "Wir laden dich ein, auszuprobieren, zu empfangen, zu genießen und deinen eigenen Impulsen zu folgen.",
+          "Mal langsam und still. Mal wild und verspielt. Gemeinsam mit anderen Frauen und mit Raum für dich.",
+          "Ein Wochenende, an dem nichts Besonderes passieren muss – und gerade deshalb ziemlich viel entstehen darf."
         ],
         "cta": "Interesse am Retreat anmelden",
         "ctaSubject": "Interesse Retreat zum Durchatmen",
-        "note": ""
-      },
-      {
-        "tag": "Workshop",
-        "title": "Begegnung als Kunst",
-        "image": "/assets/generated/workshop-begegnung-poster-2026.png",
-        "imageAlt": "Poster für den Workshop Begegnung als Kunst mit Datum, Ort und zwei abstrahierten Figuren aus coral- und dunkelblauen Farbspuren",
-        "imageFit": "contain",
-        "intro": "Was passiert, wenn Begegnung selbst zum Kunstwerk wird?",
-        "facts": [
-          {
-            "label": "Termin",
-            "value": "Samstag, 12. September 2026"
-          },
-          {
-            "label": "Zeit",
-            "value": "14–17 Uhr"
-          },
-          {
-            "label": "Ort",
-            "value": "BELLA DONNA HAUS – Ein Haus von Frauen e.V."
-          },
-          {
-            "label": "Kosten",
-            "value": "29 € p. P. / 50 € für zwei Personen"
-          },
-          {
-            "label": "Inklusive",
-            "value": "Tee, Snacks und Material"
-          }
-        ],
-        "paragraphs": [
-          "Mit einfachen künstlerischen Impulsen, Farbe und spielerischer Interaktion entsteht ein gemeinsames Kunstwerk. Der Workshop lädt dazu ein, Verbindung einmal anders zu erleben – kreativ, leicht, achtsam und ohne künstlerischen Leistungsdruck.",
-          "Offen für Einzelpersonen, Paare, Freundschaften, Geschwister und alle, die Lust haben, Begegnung auf neue Weise zu erfahren. Mit Julie & Nina von Moon Sisters."
-        ],
-        "cta": "Für „Begegnung als Kunst“ anmelden",
-        "ctaSubject": "Anmeldung Begegnung als Kunst",
-        "note": ""
+        "note": "",
+        "imageFit": "contain"
       }
     ]
   },

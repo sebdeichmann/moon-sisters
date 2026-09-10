@@ -73,6 +73,7 @@ collections:
                 fields:
                   - { label: Direkter Link-Anker, name: id, widget: string, required: false, hint: "Optional, z. B. frauenabend-29-09. Der Link lautet dann #frauenabend-29-09." }
                   - { label: Als erstes Angebot hervorheben, name: featured, widget: boolean, required: false, default: false }
+                  - { label: Sichtbar bis einschließlich, name: expiresAfter, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD, required: false, hint: "Optional. Das Angebot wird ab dem folgenden Tag automatisch ausgeblendet." }
                   - { label: Kategorie, name: tag, widget: string }
                   - { label: Titel, name: title, widget: string }
                   - { label: Bild, name: image, widget: image }

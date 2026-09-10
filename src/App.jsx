@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { dateKeyInTimeZone, isOfferVisibleOnDateKey } from './utils/dateVisibility.js';
 
 const translations = {
   'Home': 'Home',
@@ -36,7 +37,6 @@ const translations = {
   'Frauenkreise, Retreat & Workshops': 'Women’s Circles, Retreat & Workshops',
   'Geschützte, klar gehaltene und doch offene Räume für Verbindung, Reflexion und gemeinsames Erleben. Strukturiert genug, um zu tragen – offen genug, um zu lassen, was sich zeigt.': 'Protected, clearly held yet open spaces for connection, reflection and shared experience. Structured enough to hold – open enough to let what wants to emerge be there.',
   'Fortlaufender Kreis': 'Ongoing circle',
-  'Frauenkreis 3.0': 'Women’s Circle 3.0',
   'Frauenkreis 4.0': 'Women’s Circle 4.0',
   'Ein gemeinsamer Durchlauf für Frauen, die sich nach echter Begegnung sehnen – mit anderen und mit sich selbst.': 'A shared cycle for women longing for real encounter – with others and with themselves.',
   'Der nächste Durchlauf im Herbst – für Verbindung, Reflexion und achtsames Miteinander.': 'The next autumn cycle – for connection, reflection and mindful togetherness.',
@@ -62,22 +62,9 @@ const translations = {
   'Klar gerahmt, vertraulich und ohne Leistungsdruck.': 'Clearly framed, confidential and without pressure to perform.',
   'Auch hier gehören die Termine zusammen: sechs Abende als gemeinsamer Kreis, in dem Vertrauen wachsen und Begegnung tiefer werden kann.': 'Here, too, the dates belong together: six evenings as one shared circle in which trust can grow and encounter can deepen.',
   'Du darfst kommen, wie du bist – ohne Bewertung, ohne Muss.': 'You may come as you are – without judgment, without having to be anything.',
-  'Für Frauenkreis 3.0 anmelden': 'Register for Women’s Circle 3.0',
   'Für Frauenkreis 4.0 anmelden': 'Register for Women’s Circle 4.0',
   'Anmeldung per E-Mail.': 'Registration by email.',
   'Retreat': 'Retreat',
-  'Frauen-Retreat zum Durchatmen': 'Women’s Retreat to Breathe',
-  'Ein Wochenende zum Weichwerden, Erinnern und Durchatmen – mit Zeit für dich und Raum für Gemeinschaft.': 'A weekend to soften, remember and breathe – with time for yourself and space for community.',
-  'Gemeinsam ankommen und einfach sein, auftanken, zur Ruhe kommen und neue Kraft sammeln.': 'Arriving together and simply being, recharging, becoming quiet and gathering new strength.',
-  'Mit Verbindung, Körperwahrnehmung, achtsamem Miteinander – und gemeinsamem Kochen, Essen, Lachen und Genießen. Du kannst allein kommen oder gemeinsam mit einer Freundin.': 'With connection, body awareness, mindful togetherness – and shared cooking, eating, laughter and enjoyment. You can come alone or with a friend.',
-  'Interesse am Retreat anmelden': 'Register interest in the retreat',
-  'Details folgen.': 'Details to follow.',
-  'Workshop': 'Workshop',
-  'Begegnung als Kunst': 'Encounter as Art',
-  'Ein Workshop im Rahmen der Frauenkulturtage Bad Oldesloe – für Begegnung, Wahrnehmung und lebendigen Austausch.': 'A workshop as part of the Women’s Culture Days Bad Oldesloe – for encounter, perception and lively exchange.',
-  'Ein Nachmittagsraum für Frauen, die Begegnung nicht als Technik, sondern als etwas Lebendiges verstehen möchten: aufmerksam, ehrlich und mit Neugier auf das, was entsteht.': 'An afternoon space for women who want to understand encounter not as a technique, but as something alive: attentive, honest and curious about what emerges.',
-  'Zum Workshop anfragen': 'Ask about the workshop',
-  'Weitere Infos per E-Mail.': 'Further information by email.',
 
   'Die Moon Sisters': 'Meet the Moon Sisters',
   'Zwei Frauen, zwei Wege – ein gemeinsamer Raum. Wir bringen unsere jeweilige Arbeit, unsere Erfahrungen und unsere unterschiedlichen Perspektiven in die Moon Sisters ein.': 'Two women, two paths – one shared space. We bring our individual work, our experience and our different perspectives into Moon Sisters.',
@@ -99,7 +86,7 @@ const translations = {
   'Hier wird dein Gedankenkarussell komprimiert und du gehst beseelt nach Hause.': 'Here, the carousel of thoughts quiets down – and you go home with your soul a little fuller.',
 
   'Schreib uns – wir freuen uns.': 'Write to us – we’d love to hear from you.',
-  'Du möchtest dich für einen Frauenkreis anmelden, hast Interesse am Retreat oder eine Frage zum Workshop? Schreib uns gern eine kurze Nachricht.': 'Would you like to register for a women’s circle, are you interested in the retreat or do you have a question about the workshop? Send us a short message.',
+
   'Frauenkreise, Retreats & Workshops in Bad Oldesloe, an der Nordsee und online.': 'Women’s circles, retreats & workshops in Bad Oldesloe, at the North Sea and online.',
 
   'Angaben gemäß § 5 DDG': 'Information according to § 5 DDG',
@@ -148,31 +135,25 @@ const translations = {
   'Per E-Mail anfragen': 'Enquire by email',
   'Die aktuellen Zyklen findest du direkt hier.': 'You can find the current cycles right here.',
   'Retreat zum Durchatmen': 'Retreat to Breathe',
-  'Ein nährendes Wochenende für Frauen – zum Durchatmen, Auftanken, einfach Sein und in Gemeinschaft sein.': 'A nourishing weekend for women – to breathe, recharge, simply be and be in community.',
-  'ca. 10 Teilnehmerinnen plus Julie & Nina': 'approx. 10 participants plus Julie & Nina',
-  'werden ergänzt': 'to be added',
-  'Unser Retreat lädt dich ein, für ein Wochenende aus dem Alltag auszusteigen und bei dir anzukommen. Wir schaffen einen warmen, gemütlichen Rahmen mit Zeit für Achtsamkeit, Bewegung, Austausch, Ruhe, Kreativität und gemeinsames Essen.': 'Our retreat invites you to step out of everyday life for a weekend and arrive in yourself. We create a warm, cosy frame with time for mindfulness, movement, exchange, rest, creativity and shared meals.',
-  'Es geht nicht darum, etwas zu erreichen. Es geht darum, Raum zu haben: für dich, für Verbindung, für Stille, für Lebendigkeit und für das, was dich gerade stärkt.': 'It is not about achieving something. It is about having space: for yourself, for connection, for stillness, for aliveness and for what strengthens you right now.',
-  'Mit gemeinsamem Kochen, Selbstversorgung, achtsamen Impulsen, Bewegung und Raum für Ruhe, Verbindung und Gemeinschaft.': 'With shared cooking, self-catering, mindful impulses, movement and space for rest, connection and community.',
+  'Moon-Sisters-Motiv für das Frauen-Retreat in der Alten Schule Bordelum': 'Moon Sisters artwork for the women’s retreat at Alte Schule Bordelum',
+  'Ein Retreat für Frauen, die mehr bei sich ankommen wollen.': 'A retreat for women who want to arrive more fully in themselves.',
+  '8–10 Teilnehmerinnen plus Julie & Nina': '8–10 participants plus Julie & Nina',
+  '444 € für die ersten vier Anmeldungen, danach 484 €': '€444 for the first four registrations, then €484',
+  'Ein Wochenende zum Ankommen. Bewegen. Tanzen. Ausruhen. Gestalten. Kochen. Genießen. Berühren und berührt werden. Draußen sein. Spielen. Feiern. Still werden.': 'A weekend to arrive. Move. Dance. Rest. Create. Cook. Enjoy. Touch and be touched. Be outdoors. Play. Celebrate. Become still.',
+  'Und mit viel Raum dazwischen.': 'And with plenty of space in between.',
+  'Dieses Retreat ist für dich, wenn du dich danach sehnst, wieder mehr in deinem eigenen Leben anzukommen – es mit allen Sinnen zu erfahren, dich darin lebendig zu fühlen und es aus dir heraus zu gestalten.': 'This retreat is for you if you long to arrive more fully in your own life again – to experience it with all your senses, to feel alive within it and to shape it from within yourself.',
+  'Wenn du klarer spüren möchtest: Was ist meins – und was nicht? Was brauche ich? Was möchte ich? Wo ist mein Ja, mein Nein oder mein Vielleicht?': 'If you want to sense more clearly: What is mine – and what is not? What do I need? What do I want? Where is my yes, my no or my maybe?',
+  'Wir laden dich ein, auszuprobieren, zu empfangen, zu genießen und deinen eigenen Impulsen zu folgen.': 'We invite you to experiment, receive, enjoy and follow your own impulses.',
+  'Mal langsam und still. Mal wild und verspielt. Gemeinsam mit anderen Frauen und mit Raum für dich.': 'Sometimes slow and quiet. Sometimes wild and playful. Together with other women, with space for yourself.',
+  'Ein Wochenende, an dem nichts Besonderes passieren muss – und gerade deshalb ziemlich viel entstehen darf.': 'A weekend where nothing special has to happen – and precisely because of that, quite a lot may emerge.',
   'Interesse am Retreat anmelden': 'Register interest in the retreat',
-  'Kosten und weitere Details werden ergänzt.': 'Cost and further details will be added.',
-  'Was passiert, wenn Begegnung selbst zum Kunstwerk wird?': 'What happens when encounter itself becomes a work of art?',
-  'Kreativer Workshop mit Farbe und Begegnung': 'Creative workshop with colour and encounter',
-  'Termin': 'Date',
-  'Samstag, 12. September 2026': 'Saturday, 12 September 2026',
-  'BELLA DONNA HAUS – Ein Haus von Frauen e.V.': 'BELLA DONNA HAUS – Ein Haus von Frauen e.V.',
-  '29 € p. P. / 50 € für zwei Personen': '€29 per person / €50 for two people',
-  'Inklusive': 'Included',
-  'Tee, Snacks und Material': 'Tea, snacks and materials',
-  'Mit einfachen künstlerischen Impulsen, Farbe und spielerischer Interaktion entsteht ein gemeinsames Kunstwerk. Der Workshop lädt dazu ein, Verbindung einmal anders zu erleben – kreativ, leicht, achtsam und ohne künstlerischen Leistungsdruck.': 'With simple artistic impulses, colour and playful interaction, a shared artwork emerges. The workshop invites you to experience connection in a different way – creative, light, mindful and without artistic pressure to perform.',
-  'Offen für Einzelpersonen, Paare, Freundschaften, Geschwister und alle, die Lust haben, Begegnung auf neue Weise zu erfahren. Mit Julie & Nina von Moon Sisters.': 'Open to individuals, couples, friends, siblings and anyone who wants to experience encounter in a new way. With Julie & Nina from Moon Sisters.',
-  'Für „Begegnung als Kunst“ anmelden': 'Register for “Encounter as Art”',
+  'Interesse Retreat zum Durchatmen': 'Interest in Retreat to Breathe',
   'Frauenabend': 'Women’s evening',
   'Frauenabend – Ein Abend zum Ankommen': 'Women’s Evening – An Evening to Arrive',
-  'Moon-Sisters-Poster für den Frauenabend mit Kerze, Blumen, Tee und Kreativmaterial in warmer Atmosphäre': 'Moon Sisters poster for the women’s evening with a candle, flowers, tea and creative materials in a warm atmosphere',
+  'Gestaltetes Moon-Sisters-Motiv für den Frauenabend mit Blumen, Kerze, Tee und Kreativmaterial': 'Moon Sisters artwork for the women’s evening with flowers, a candle, tea and creative materials',
   'Vielleicht sehnst du dich gerade nach ein bisschen weniger Müssen. Nach einer Stunde, in der du nicht funktionieren, leisten oder irgendwo ankommen musst.': 'Perhaps you are longing for a little less having to. For an hour in which you do not need to function, perform or arrive anywhere.',
   '29. September 2026 · 19:30 Uhr': '29 September 2026 · 7:30 pm',
-  'Bella Donna Haus · Bad Oldesloe': 'Bella Donna Haus · Bad Oldesloe',
+  'BELLA DONNA HAUS · Bad Oldesloe': 'BELLA DONNA HAUS · Bad Oldesloe',
   'kostenlos': 'free of charge',
   'Mit kleinen Impulsen aus Bewegung, Begegnung, Kreativität und Stille laden wir dich ein, für eine Stunde aus dem Alltag auszusteigen und wieder ein bisschen mehr bei dir anzukommen.': 'With small impulses from movement, encounter, creativity and stillness, we invite you to step out of everyday life for an hour and arrive a little more fully with yourself again.',
   'Du kannst alleine kommen, jemanden mitbringen, Moon Sisters schon kennen oder zum allerersten Mal dabei sein.': 'You can come on your own, bring someone along, already know Moon Sisters or be joining us for the very first time.',
@@ -189,7 +170,7 @@ const translations = {
   'Ein Ort, an dem ich ankommen und zur Ruhe kommen kann. Ein Ort, an dem ich gehört werde und höre.': 'A place where I can arrive and become quiet. A place where I am heard and where I listen.',
   'Ihr seid meine Achtsamkeitsmusen!': 'You are my mindfulness muses!',
   'Gegenseitige Inspiration, Warmherzigkeit, Verstehen, Spaß und Lebensfreude geben Mut und Kraft.': 'Mutual inspiration, warmth, understanding, fun and joy of life give courage and strength.',
-  'Du möchtest dich für einen Frauenkreis anmelden, Interesse am Retreat zeigen oder dich für „Begegnung als Kunst“ anmelden? Schreib uns gern eine kurze Nachricht.': 'Would you like to register for a women’s circle, show interest in the retreat or register for “Encounter as Art”? Feel free to send us a short message.',
+  'Du möchtest dich für einen Frauenkreis anmelden, hast Interesse am Retreat oder eine Frage? Schreib uns gern eine kurze Nachricht.': 'Would you like to register for a women’s circle, are you interested in the retreat or do you have a question? Feel free to send us a short message.',
 };
 
 function translateValue(value, language) {
@@ -375,8 +356,9 @@ function LegalPage({ content, page, language, setLanguage }) {
   );
 }
 
-function HomePage({ content, language, setLanguage }) {
+function HomePage({ content, language, setLanguage, currentDateKey }) {
   const { founders, contactEmail, contactLabel } = content;
+  const visibleOffers = content.offers.cards.filter((offer) => isOfferVisibleOnDateKey(offer, currentDateKey));
 
   return (
     <>
@@ -420,7 +402,7 @@ function HomePage({ content, language, setLanguage }) {
           </div>
 
           <div className="offer-grid">
-            {content.offers.cards.map((offer) => (
+            {visibleOffers.map((offer) => (
               <OfferCard key={offer.id ?? offer.title} offer={offer} contactEmail={contactEmail} />
             ))}
           </div>
@@ -483,6 +465,7 @@ function HomePage({ content, language, setLanguage }) {
 
 export default function App({ content }) {
   const [language, setLanguage] = useState(() => localStorage.getItem('moonSistersLanguage') || 'de');
+  const [currentDateKey, setCurrentDateKey] = useState(() => dateKeyInTimeZone());
   const path = window.location.pathname.replace(/\/$/, '') || '/';
   const visibleContent = translateValue(content, language);
 
@@ -490,6 +473,33 @@ export default function App({ content }) {
     localStorage.setItem('moonSistersLanguage', language);
     document.documentElement.lang = language;
   }, [language]);
+
+  useEffect(() => {
+    let targetId;
+    try {
+      targetId = decodeURIComponent(window.location.hash.slice(1));
+    } catch {
+      return undefined;
+    }
+    if (!targetId) return undefined;
+
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById(targetId)?.scrollIntoView();
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      const nextDateKey = dateKeyInTimeZone();
+      setCurrentDateKey((previousDateKey) => (
+        previousDateKey === nextDateKey ? previousDateKey : nextDateKey
+      ));
+    }, 30_000);
+
+    return () => window.clearInterval(timer);
+  }, []);
 
   if (path === '/datenschutz') {
     document.title = language === 'en' ? 'Privacy Policy – Moon Sisters' : 'Datenschutzerklärung – Moon Sisters';
@@ -504,5 +514,5 @@ export default function App({ content }) {
   document.title = language === 'en'
     ? 'Moon Sisters – Women’s Circles, Retreats & Workshops'
     : 'Moon Sisters – Frauenkreise, Retreats & Workshops';
-  return <HomePage content={visibleContent} language={language} setLanguage={setLanguage} />;
+  return <HomePage content={visibleContent} language={language} setLanguage={setLanguage} currentDateKey={currentDateKey} />;
 }
