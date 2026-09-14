@@ -1,0 +1,41 @@
+# Retreat subpage preview
+
+## Purpose
+
+Recreate and polish the supplied Lovable retreat page as a compelling Moon Sisters subpage at `/retreat/`, while keeping production untouched until Julie approves the preview.
+
+## Design review and changes
+
+- Preserved the North Sea atmosphere, warm earth palette, German copy, venue photography and calm tone.
+- Strengthened the hero hierarchy and made the Moon Sisters identity and route back to the main website explicit.
+- Reworked the long narrative into an editorial rhythm with sensory pauses, pull-lines and clearer section changes.
+- Replaced the generic feature-card feeling with quieter typographic rows and an asymmetric venue gallery.
+- Consolidated date, venue, group size, price, included services, travel note and minimum-participant condition into one scannable practical section.
+- Added repeated but restrained booking links, direct email subjects, legal/footer navigation and a main-site retreat link.
+- Added route-specific metadata, sitemap entry and favicon.
+- Optimized the two heaviest supplied images from roughly 4.7 MB combined to roughly 0.4 MB combined.
+
+## Files
+
+- `src/RetreatPage.jsx` — retreat page structure and route metadata
+- `src/content/retreatContent.js` — retreat copy and practical data
+- `src/App.jsx` — `/retreat/` route and link from the main offer
+- `src/content/siteContent.json` — main-page retreat link
+- `src/styles/global.css` — scoped retreat visual system and responsive layouts
+- `public/assets/retreat/` — optimized supplied retreat and venue imagery
+- `public/favicon.svg`, `public/sitemap.xml`, `index.html` — browser and discovery metadata
+- `docs/retreat-responsive-check.json` — browser QA results
+
+## Verification
+
+- `npm audit fix`: 0 remaining vulnerabilities
+- `npm run build`: successful Vite production build
+- Desktop, tablet and mobile route checks: no horizontal overflow
+- Required content, booking links and home links present
+- Main-page “Mehr zum Retreat” link present
+- Fonts loaded; no blocking JavaScript errors
+- Visual inspection completed at 1440 px and 390 px in a bounded two-pass review
+
+## Release status
+
+Preview only. Do not push to `main` or deploy to `moon-sisters.de` until Julie explicitly approves the verified Netlify preview.

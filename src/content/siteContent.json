@@ -218,6 +218,8 @@
         ],
         "cta": "Interesse am Retreat anmelden",
         "ctaSubject": "Interesse Retreat zum Durchatmen",
+        "pageHref": "/retreat/",
+        "pageLabel": "Mehr zum Retreat",
         "note": "",
         "imageFit": "contain"
       }

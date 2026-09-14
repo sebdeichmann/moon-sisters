@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { dateKeyInTimeZone, isOfferVisibleOnDateKey } from './utils/dateVisibility.js';
+import RetreatPage from './RetreatPage.jsx';
 
 const translations = {
   'Home': 'Home',
@@ -148,6 +149,7 @@ const translations = {
   'Ein Wochenende, an dem nichts Besonderes passieren muss – und gerade deshalb ziemlich viel entstehen darf.': 'A weekend where nothing special has to happen – and precisely because of that, quite a lot may emerge.',
   'Interesse am Retreat anmelden': 'Register interest in the retreat',
   'Interesse Retreat zum Durchatmen': 'Interest in Retreat to Breathe',
+  'Mehr zum Retreat': 'Explore the retreat',
   'Frauenabend': 'Women’s evening',
   'Frauenabend – Ein Abend zum Ankommen': 'Women’s Evening – An Evening to Arrive',
   'Gestaltetes Moon-Sisters-Motiv für den Frauenabend mit Blumen, Kerze, Tee und Kreativmaterial': 'Moon Sisters artwork for the women’s evening with flowers, a candle, tea and creative materials',
@@ -298,6 +300,11 @@ function OfferCard({ offer, contactEmail }) {
         {offer.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
+        {offer.pageHref && (
+          <a className="text-link offer-detail-link" href={offer.pageHref}>
+            {offer.pageLabel} <span aria-hidden="true">→</span>
+          </a>
+        )}
         {offer.cycles && (
           <div className="cycle-grid" aria-label="Aktuelle Frauenkreis-Zyklen">
             {offer.cycles.map((cycle) => (
@@ -471,8 +478,8 @@ export default function App({ content }) {
 
   useEffect(() => {
     localStorage.setItem('moonSistersLanguage', language);
-    document.documentElement.lang = language;
-  }, [language]);
+    document.documentElement.lang = path === '/retreat' ? 'de' : language;
+  }, [language, path]);
 
   useEffect(() => {
     let targetId;
@@ -509,6 +516,11 @@ export default function App({ content }) {
   if (path === '/impressum') {
     document.title = language === 'en' ? 'Imprint – Moon Sisters' : 'Impressum – Moon Sisters';
     return <LegalPage content={visibleContent} page={visibleContent.legal.impressum} language={language} setLanguage={setLanguage} />;
+  }
+
+  if (path === '/retreat') {
+    document.title = 'Lass dich vom Leben berühren – Retreat für Frauen | Moon Sisters';
+    return <RetreatPage content={content} />;
   }
 
   document.title = language === 'en'

@@ -1,0 +1,51 @@
+[
+  {
+    "viewport": "mobile-390",
+    "title": "Lass dich vom Leben berühren – Retreat für Frauen | Moon Sisters",
+    "h1": "Lass dich vom Leben berühren",
+    "horizontal_overflow": false,
+    "scroll_width": 375,
+    "client_width": 375,
+    "body_height": 10450,
+    "booking_links": 6,
+    "home_links": 2,
+    "content_checks": true,
+    "fonts_loaded": "loaded",
+    "console_errors": []
+  },
+  {
+    "viewport": "tablet-768",
+    "title": "Lass dich vom Leben berühren – Retreat für Frauen | Moon Sisters",
+    "h1": "Lass dich vom Leben berühren",
+    "horizontal_overflow": false,
+    "scroll_width": 753,
+    "client_width": 753,
+    "body_height": 9382,
+    "booking_links": 6,
+    "home_links": 2,
+    "content_checks": true,
+    "fonts_loaded": "loaded",
+    "console_errors": []
+  },
+  {
+    "viewport": "desktop-1440",
+    "title": "Lass dich vom Leben berühren – Retreat für Frauen | Moon Sisters",
+    "h1": "Lass dich vom Leben berühren",
+    "horizontal_overflow": false,
+    "scroll_width": 1425,
+    "client_width": 1425,
+    "body_height": 9189,
+    "booking_links": 6,
+    "home_links": 2,
+    "content_checks": true,
+    "fonts_loaded": "loaded",
+    "console_errors": []
+  },
+  {
+    "main_to_retreat_link_count": 1,
+    "main_to_retreat_link_text": [
+      "Mehr zum Retreat →"
+    ],
+    "main_to_retreat_ok": true
+  }
+]
