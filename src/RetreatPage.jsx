@@ -24,6 +24,7 @@ function RetreatHeader({ contactEmail }) {
       <nav aria-label="Retreat Navigation">
         <a href="#ort">Der Ort</a>
         <a href="#praktisches">Praktisches</a>
+        <a href="#faq">FAQs</a>
         <MailLink className="retreat-nav-cta" email={contactEmail} subject={retreatContent.emailSubject}>
           Anmelden
         </MailLink>
@@ -108,12 +109,25 @@ export default function RetreatPage({ content }) {
         </section>
 
         <section className="retreat-invitation retreat-shell">
-          <figure className="retreat-editorial-image">
-            <img src="/assets/retreat/circle-cushions.webp" alt="Kissen und weiche Decken in einem ruhigen Raum" loading="lazy" />
-          </figure>
           <div className="retreat-invitation-copy">
             {retreatContent.invitation.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             <p className="retreat-pull-line">{retreatContent.invitation.closing}</p>
+          </div>
+        </section>
+
+        <section className="retreat-at-glance" aria-labelledby="retreat-at-glance-title">
+          <div className="retreat-shell retreat-at-glance-inner">
+            <div className="retreat-at-glance-heading">
+              <h2 id="retreat-at-glance-title">Auf einen Blick</h2>
+              <p>13.–15. November 2026 · zwei Übernachtungen · vegetarische Verpflegung · ab 444 €</p>
+            </div>
+            <div className="retreat-at-glance-included">
+              <h3>Im Preis enthalten</h3>
+              <ul>
+                {retreatContent.included.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+              <a href="#praktisches">Alle praktischen Details</a>
+            </div>
           </div>
         </section>
 
@@ -182,11 +196,22 @@ export default function RetreatPage({ content }) {
               ))}
             </dl>
             <div className="retreat-included">
-              <h3>Im Preis enthalten</h3>
-              <ul>
-                {retreatContent.included.map((item) => <li key={item}>{item}</li>)}
-              </ul>
-              <p>{retreatContent.travelNote}</p>
+              <div>
+                <h3>Im Preis enthalten</h3>
+                <ul>
+                  {retreatContent.included.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+              <div>
+                <h3>Im Retreatprogramm</h3>
+                <ul>
+                  {retreatContent.programIncluded.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+              <div className="retreat-not-included">
+                <h3>Nicht enthalten</h3>
+                {retreatContent.notIncluded.map((item) => <p key={item}>{item}</p>)}
+              </div>
             </div>
             <aside className="retreat-booking-note">
               <h3>Gut zu wissen</h3>
@@ -201,6 +226,29 @@ export default function RetreatPage({ content }) {
                 Meinen Platz buchen
               </MailLink>
             </div>
+          </div>
+        </section>
+
+        <section className="retreat-faq retreat-shell" id="faq" aria-labelledby="retreat-faq-title">
+          <div className="retreat-section-heading">
+            <h2 id="retreat-faq-title">Häufige Fragen</h2>
+            <p>Damit du vor deiner Buchung weißt, worauf du dich einlässt – praktisch, persönlich und finanziell.</p>
+          </div>
+          <div className="retreat-faq-list">
+            {retreatContent.faqs.map((faq) => (
+              <details key={faq.question}>
+                <summary>{faq.question}</summary>
+                <div className="retreat-faq-answer">
+                  {faq.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                  {faq.bullets && (
+                    <ul>
+                      {faq.bullets.map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                  )}
+                  {faq.after?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </div>
+              </details>
+            ))}
           </div>
         </section>
 

@@ -49,19 +49,79 @@ const retreatContent = {
   },
   facts: [
     { label: 'Datum', value: '13.–15. November 2026' },
+    { label: 'Ankommen', value: 'Freitag ab 16:00 Uhr · Beginn 17:00 Uhr · Abreise Sonntag gegen 15:30 Uhr' },
     { label: 'Ort', value: 'Alte Schule · Bordelum · Nordsee' },
     { label: 'Gruppe', value: '8–10 Frauen' },
     { label: 'Preis', value: '444 € für die ersten vier Anmeldungen, danach 484 € pro Person' },
   ],
   included: [
-    '2 Übernachtungen in der Alten Schule',
-    'Vegetarische Verpflegung',
-    'Tee, Kaffee und Snacks',
+    '2 Übernachtungen im Doppelzimmer',
+    'Vegetarische Verpflegung während des gesamten Wochenendes',
+    'Snacks, Tee und Kaffee',
     'Kreative Materialien',
-    'Retreat-Begleitung mit Julie & Nina',
+    'Das gesamte Retreatprogramm und die Begleitung durch Julie & Nina',
   ],
-  travelNote: 'Die Anreise ist nicht enthalten.',
+  programIncluded: [
+    'Bewegung und Körperwahrnehmung',
+    'Kreatives Gestalten und Experimentieren',
+    'Impulse zu Berührung und Begegnung',
+    'Kreis, Austausch und Reflexion',
+    'Gemeinsames Kochen und Essen',
+    'Zeit draußen und Spaziergänge',
+    'Raum für Ruhe, Rückzug, Spiel, spontane Dance Partys und einfaches Zusammensein',
+  ],
+  notIncluded: [
+    'An- und Abreise sind nicht im Preis enthalten.',
+    'Bettwäsche und Handtuch kannst du selbst mitbringen oder für insgesamt 15 € vor Ort leihen.',
+  ],
   bookingNote: 'Damit das Retreat stattfinden kann, brauchen wir bis zum 13. Oktober mindestens acht vollständig angemeldete und bezahlte Teilnehmerinnen. Sobald acht Frauen bestätigt sind, steht das Retreat fest – und die restlichen Plätze bis maximal zehn können weiterhin gebucht werden.',
+  faqs: [
+    {
+      question: 'Muss ich Erfahrung mit Bewegung, Körperarbeit oder kreativem Gestalten haben?',
+      paragraphs: ['Nein. Du brauchst keine Vorerfahrung und musst auch nicht besonders „kreativ“ sein. Neugier reicht.'],
+    },
+    {
+      question: 'Muss ich bei allem mitmachen?',
+      paragraphs: ['Nein. Alles, was wir anbieten, ist eine Einladung. Du entscheidest selbst, was für dich gerade passt – ob du mitmachst, eine Pause brauchst, dich zurückziehen möchtest oder bei etwas einfach nur dabei sein willst.'],
+    },
+    {
+      question: 'Welche Rolle spielt Berührung?',
+      paragraphs: ['Berührung kann Teil einzelner Impulse sein – immer als Einladung, nie als Erwartung. Du entscheidest jederzeit selbst, ob und wie du Berührung erleben möchtest. Ein Ja, Nein, Vielleicht oder „Ich weiß es gerade nicht“ darf seinen Platz haben.'],
+    },
+    {
+      question: 'Wie sind wir untergebracht und wie komme ich hin?',
+      paragraphs: [
+        'Wir verbringen das Wochenende gemeinsam in der Alten Schule, Dörpstraat 18, 25852 Bordelum in Nordfriesland, nahe der Nordsee.',
+        'Die Unterbringung erfolgt in Doppelzimmern. Bettwäsche und Handtuch kannst du selbst mitbringen oder für insgesamt 15 € vor Ort leihen.',
+        'Wir können eine Fahrgemeinschaft bilden. Mehr Informationen dazu bekommst du bei der Anmeldung.',
+      ],
+    },
+    {
+      question: 'Was gibt es zu essen?',
+      paragraphs: ['Wir kochen und essen gemeinsam vegetarisch. Wenn du Allergien, Unverträglichkeiten oder besondere Ernährungsbedürfnisse hast, gib uns bei der Anmeldung Bescheid.'],
+    },
+    {
+      question: 'Was passiert, wenn ich nach der Anmeldung doch nicht teilnehmen kann?',
+      paragraphs: [
+        'Mit deiner Buchung ist dein Platz verbindlich reserviert. Wenn du nicht teilnehmen kannst, kannst du jederzeit vor Beginn des Retreats zurücktreten. Bitte teile uns deine Stornierung in Textform, am besten per E-Mail, mit.',
+        'Es gelten folgende Stornopauschalen:',
+      ],
+      bullets: [
+        'bis einschließlich 13. Oktober 2026: 30 % des gebuchten Retreatpreises',
+        'vom 14. bis einschließlich 31. Oktober 2026: 70 %',
+        'ab 1. November 2026: 100 %',
+      ],
+      after: [
+        'Dir bleibt der Nachweis vorbehalten, dass uns durch deine Stornierung kein oder ein wesentlich geringerer Schaden entstanden ist.',
+        'Du kannst deinen Platz unter den gesetzlichen Voraussetzungen auf eine andere geeignete Teilnehmerin übertragen. Bitte informiere uns darüber möglichst frühzeitig.',
+        'Da das Retreat zu einem festgelegten Termin stattfindet, besteht für die Buchung kein gesetzliches Widerrufsrecht.',
+      ],
+    },
+    {
+      question: 'Was passiert, wenn nicht acht Frauen zusammenkommen?',
+      paragraphs: ['Das Retreat findet ab acht Teilnehmerinnen statt. Sollte die Mindestteilnehmerzahl nicht erreicht werden, können wir das Retreat absagen. Darüber informieren wir dich spätestens am 15. Oktober 2026. Bereits geleistete Zahlungen erhältst du in diesem Fall vollständig zurück.'],
+    },
+  ],
   emailSubject: 'Anmeldung Moon Sisters Retreat · 13.–15. November 2026',
 };
 

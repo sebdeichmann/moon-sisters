@@ -15,6 +15,14 @@ Recreate and polish the supplied Lovable retreat page as a compelling Moon Siste
 - Added route-specific metadata, sitemap entry and favicon.
 - Optimized the two heaviest supplied images from roughly 4.7 MB combined to roughly 0.4 MB combined.
 
+## Revision after Julie's review
+
+- Removed the early women’s-circle photograph; the section after “Mehr spüren. Weniger müssen.” is now a confident, text-led editorial passage.
+- Added an early “Auf einen Blick” section with price, accommodation, food, materials and facilitation before the longer retreat-fit section.
+- Expanded the later practical section with arrival/departure times, double-room accommodation, bedding and towel hire, the full retreat programme and exclusions.
+- Added seven approved FAQ accordions from `Moon Sisters Retreat – Informationen`, including participation, touch, accommodation, food, cancellation and minimum-participant terms.
+- Cancellation information is deliberately contained in the FAQ: visible before booking, but separated from the emotional invitation.
+
 ## Files
 
 - `src/RetreatPage.jsx` — retreat page structure and route metadata
@@ -31,7 +39,7 @@ Recreate and polish the supplied Lovable retreat page as a compelling Moon Siste
 - `npm audit fix`: 0 remaining vulnerabilities
 - `npm run build`: successful Vite production build
 - Desktop, tablet and mobile route checks: no horizontal overflow
-- Required content, booking links and home links present
+- Required content, seven working FAQ items, booking links and home links present
 - Main-page “Mehr zum Retreat” link present
 - Fonts loaded; no blocking JavaScript errors
 - Visual inspection completed at 1440 px and 390 px in a bounded two-pass review

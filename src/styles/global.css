@@ -1141,30 +1141,23 @@ figcaption {
 }
 
 .retreat-invitation {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.84fr) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(2.5rem, 7vw, 6.5rem);
-  padding-top: 1rem;
-}
-
-.retreat-editorial-image {
-  margin: 0;
-  overflow: hidden;
-  border-radius: 48% 48% 24px 24px;
-  box-shadow: 0 30px 85px rgba(58, 37, 26, 0.15);
-}
-
-.retreat-editorial-image img {
-  aspect-ratio: 4 / 5.2;
-  object-fit: cover;
+  padding-top: 0;
 }
 
 .retreat-invitation-copy {
   display: grid;
   gap: 1.25rem;
+  max-width: 50rem;
+  margin-inline: auto;
   color: var(--retreat-muted);
-  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 1.35vw, 1.18rem);
+}
+
+.retreat-invitation-copy > p:first-child {
+  color: var(--retreat-ink);
+  font-family: Newsreader, Georgia, serif;
+  font-size: clamp(1.55rem, 2.6vw, 2.3rem);
+  line-height: 1.32;
 }
 
 .retreat-pull-line {
@@ -1174,6 +1167,68 @@ figcaption {
   font-size: clamp(1.75rem, 3vw, 2.75rem);
   line-height: 1.18;
   letter-spacing: -0.025em;
+}
+
+.retreat-at-glance {
+  border-block: 1px solid rgba(75, 53, 40, 0.16);
+  background: #eee1d4;
+}
+
+.retreat-at-glance-inner {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 7vw, 7rem);
+  padding-top: clamp(3.5rem, 6vw, 5.5rem);
+  padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.retreat-at-glance-heading h2 {
+  max-width: none;
+  font-size: clamp(2.35rem, 4.5vw, 4.2rem);
+  font-weight: 400;
+}
+
+.retreat-at-glance-heading p {
+  max-width: 32rem;
+  margin-top: 1rem;
+  color: var(--retreat-rust-dark);
+  font-weight: 600;
+}
+
+.retreat-at-glance-included h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+}
+
+.retreat-at-glance-included ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 2rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.retreat-at-glance-included li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--retreat-muted);
+}
+
+.retreat-at-glance-included li::before {
+  content: '';
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: var(--retreat-sage);
+}
+
+.retreat-at-glance-included a {
+  color: var(--retreat-rust-dark);
+  font-weight: 700;
 }
 
 .retreat-for-you {
@@ -1351,7 +1406,7 @@ figcaption {
 
 .retreat-facts {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin: 0;
   border-bottom: 1px solid rgba(75, 53, 40, 0.16);
 }
@@ -1381,6 +1436,9 @@ figcaption {
 }
 
 .retreat-included {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem clamp(2rem, 5vw, 5rem);
   padding: clamp(1.6rem, 4vw, 3rem);
 }
 
@@ -1417,9 +1475,19 @@ figcaption {
   background: var(--retreat-sage);
 }
 
-.retreat-included > p {
+.retreat-not-included {
+  grid-column: 1 / -1;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(75, 53, 40, 0.16);
+}
+
+.retreat-not-included p {
   color: var(--retreat-muted);
-  font-size: 0.9rem;
+  font-size: 0.94rem;
+}
+
+.retreat-not-included p + p {
+  margin-top: 0.45rem;
 }
 
 .retreat-booking-note {
@@ -1450,6 +1518,69 @@ figcaption {
 .retreat-booking a:not(.button) {
   color: var(--retreat-rust-dark);
   font-weight: 600;
+}
+
+.retreat-faq {
+  scroll-margin-top: 4.5rem;
+  padding-top: 2rem;
+}
+
+.retreat-faq-list {
+  border-top: 1px solid rgba(75, 53, 40, 0.2);
+}
+
+.retreat-faq-list details {
+  border-bottom: 1px solid rgba(75, 53, 40, 0.2);
+}
+
+.retreat-faq-list summary {
+  position: relative;
+  padding: 1.5rem 3.5rem 1.5rem 0;
+  color: var(--retreat-ink);
+  font-family: Newsreader, Georgia, serif;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.25;
+  cursor: pointer;
+  list-style: none;
+}
+
+.retreat-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.retreat-faq-list summary::before,
+.retreat-faq-list summary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0.35rem;
+  width: 1.15rem;
+  height: 1px;
+  background: var(--retreat-rust-dark);
+  transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.retreat-faq-list summary::after {
+  transform: rotate(90deg);
+}
+
+.retreat-faq-list details[open] summary::after {
+  transform: rotate(0deg);
+}
+
+.retreat-faq-answer {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 52rem;
+  padding: 0 3.5rem 1.8rem 0;
+  color: var(--retreat-muted);
+}
+
+.retreat-faq-answer ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1.2rem;
 }
 
 .retreat-hosts {
@@ -1561,6 +1692,7 @@ figcaption {
 
 @media (max-width: 900px) {
   .retreat-invitation,
+  .retreat-at-glance-inner,
   .retreat-for-you-inner,
   .retreat-section-heading,
   .retreat-venue-heading {
@@ -1595,6 +1727,10 @@ figcaption {
   }
 
   .retreat-facts div:nth-child(3) {
+    border-left: 0;
+  }
+
+  .retreat-facts div:nth-child(odd) {
     border-left: 0;
   }
 
@@ -1675,9 +1811,8 @@ figcaption {
     padding-top: 0;
   }
 
-  .retreat-editorial-image {
-    width: calc(100% - 1.6rem);
-    margin-inline: auto;
+  .retreat-at-glance-included ul {
+    grid-template-columns: 1fr;
   }
 
   .retreat-experience-list article {
@@ -1715,6 +1850,14 @@ figcaption {
 
   .retreat-included ul {
     grid-template-columns: 1fr;
+  }
+
+  .retreat-included {
+    grid-template-columns: 1fr;
+  }
+
+  .retreat-not-included {
+    grid-column: 1;
   }
 
   .retreat-booking-note {
