@@ -172,6 +172,12 @@ export default function RetreatPage({ content }) {
             </div>
             <div className="retreat-gallery">
               <figure className="retreat-gallery-main">
+                <img src="/assets/retreat/venue-bewegungsraum.webp" alt="Heller Bewegungsraum mit Holzboden und großen Fenstern in der Alten Schule" loading="lazy" />
+              </figure>
+              <figure>
+                <img src="/assets/retreat/venue-kitchen.webp" alt="Gemeinschaftsküche im Seminarhaus Alte Schule" loading="lazy" />
+              </figure>
+              <figure>
                 <img src="/assets/retreat/venue-outdoor.webp" alt="Sandiger Feuerplatz mit Holzbänken im Außengelände der Alten Schule" loading="lazy" />
               </figure>
               <figure>
