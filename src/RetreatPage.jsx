@@ -83,7 +83,7 @@ export default function RetreatPage({ content }) {
 
       <main>
         <section className="retreat-hero" aria-labelledby="retreat-title">
-          <img src="/assets/retreat/northsea.webp" alt="Weite Nordseelandschaft im November" />
+          <img src="/assets/retreat/northsea-coast.webp" alt="Weite Nordseelandschaft im November" />
           <div className="retreat-hero-shade" aria-hidden="true" />
           <div className="retreat-hero-copy">
             <h1 id="retreat-title">{retreatContent.title}</h1>
@@ -113,6 +113,10 @@ export default function RetreatPage({ content }) {
             {retreatContent.invitation.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             <p className="retreat-pull-line">{retreatContent.invitation.closing}</p>
           </div>
+          <figure className="retreat-venue-preview">
+            <img src="/assets/retreat/interior-dining.webp" alt="Heller Essbereich mit Wintergarten in der Alten Schule" loading="lazy" />
+            <figcaption>Ein erster Blick in die Alte Schule</figcaption>
+          </figure>
         </section>
 
         <section className="retreat-at-glance" aria-labelledby="retreat-at-glance-title">
@@ -169,9 +173,6 @@ export default function RetreatPage({ content }) {
             <div className="retreat-gallery">
               <figure className="retreat-gallery-main">
                 <img src="/assets/retreat/venue-bewegungsraum.webp" alt="Heller Bewegungsraum mit Holzboden und großen Fenstern in der Alten Schule" loading="lazy" />
-              </figure>
-              <figure>
-                <img src="/assets/retreat/interior-dining.webp" alt="Heller Essbereich mit Wintergarten in der Alten Schule" loading="lazy" />
               </figure>
               <figure>
                 <img src="/assets/retreat/venue-kitchen.webp" alt="Gemeinschaftsküche im Seminarhaus Alte Schule" loading="lazy" />
@@ -268,6 +269,20 @@ export default function RetreatPage({ content }) {
                 </div>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="retreat-taster">
+          <div className="retreat-shell retreat-taster-inner">
+            <div>
+              <p className="retreat-taster-intro">Du möchtest uns erst einmal kennenlernen?</p>
+              <h2>Kostenloser Frauenabend am 29. September</h2>
+            </div>
+            <div className="retreat-taster-details">
+              <p>Ein Abend zum Ankommen – mit kleinen Impulsen aus Bewegung, Begegnung, Kreativität und Stille.</p>
+              <p><strong>29. September 2026 · 19:30 Uhr</strong><br />BELLA DONNA Haus · Bad Oldesloe</p>
+              <a className="button" href="/#frauenabend-29-09">Mehr erfahren & Platz sichern</a>
+            </div>
           </div>
         </section>
 

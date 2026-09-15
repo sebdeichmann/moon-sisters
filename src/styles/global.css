@@ -1895,3 +1895,234 @@ figcaption {
     padding-bottom: 0;
   }
 }
+
+/* Retreat review refinement: editorial, open, less container-led */
+.retreat-hero > img {
+  object-position: center 48%;
+}
+
+.retreat-venue-preview {
+  max-width: 62rem;
+  margin: clamp(3rem, 6vw, 5.5rem) auto 0;
+}
+
+.retreat-venue-preview img {
+  aspect-ratio: 16 / 8.4;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.retreat-venue-preview figcaption {
+  margin-top: 0.75rem;
+  color: var(--retreat-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.retreat-at-glance {
+  border: 0;
+  background: #eadfd2;
+}
+
+.retreat-at-glance-inner {
+  align-items: start;
+}
+
+.retreat-practical-panel {
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.retreat-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 clamp(2.5rem, 7vw, 7rem);
+  border: 0;
+}
+
+.retreat-facts div,
+.retreat-facts div + div {
+  padding: 1.45rem 0 1.7rem;
+  border-top: 1px solid rgba(75, 53, 40, 0.22);
+  border-left: 0;
+}
+
+.retreat-facts div:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
+.retreat-facts dd {
+  max-width: 34rem;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.retreat-included {
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding: clamp(2rem, 5vw, 4rem);
+  background: #eadfd2;
+}
+
+.retreat-booking-note {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.4fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  margin: clamp(2.5rem, 5vw, 4rem) 0 0;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(75, 53, 40, 0.22);
+  border-bottom: 1px solid rgba(75, 53, 40, 0.22);
+}
+
+.retreat-booking-note h3 {
+  margin: 0;
+}
+
+.retreat-booking {
+  padding: clamp(2rem, 4vw, 3rem) 0 0;
+  background: transparent;
+}
+
+.retreat-gallery {
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
+  grid-template-rows: minmax(360px, 1fr);
+}
+
+.retreat-gallery-main {
+  grid-row: auto;
+}
+
+.retreat-taster {
+  background: #dfe2d5;
+}
+
+.retreat-taster-inner {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2.5rem, 7vw, 7rem);
+  padding-top: clamp(4rem, 7vw, 6.5rem);
+  padding-bottom: clamp(4rem, 7vw, 6.5rem);
+}
+
+.retreat-taster-intro {
+  margin-bottom: 0.9rem;
+  color: #596050;
+  font-weight: 600;
+}
+
+.retreat-taster h2 {
+  max-width: 12ch;
+  font-size: clamp(2.35rem, 4.5vw, 4.2rem);
+  font-weight: 400;
+}
+
+.retreat-taster-details {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 36rem;
+  color: #596050;
+}
+
+.retreat-taster-details .button {
+  justify-self: start;
+}
+
+.retreat-closing {
+  min-height: 400px;
+  border-top: 1px solid rgba(75, 53, 40, 0.16);
+  background: var(--retreat-bg);
+  color: var(--retreat-ink);
+}
+
+.retreat-closing-copy {
+  max-width: 52rem;
+}
+
+.retreat-closing h2 {
+  max-width: 20ch;
+  margin-inline: auto;
+  color: var(--retreat-ink);
+  font-size: clamp(2.35rem, 4.25vw, 4rem);
+}
+
+.retreat-closing p {
+  margin-top: 1.35rem;
+  color: var(--retreat-muted);
+}
+
+.retreat-closing-cta,
+.retreat-closing-cta:hover {
+  background: var(--retreat-rust-dark) !important;
+  color: #fff7ef !important;
+}
+
+@media (max-width: 900px) {
+  .retreat-taster-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .retreat-hero > img {
+    object-position: 58% center;
+  }
+
+  .retreat-venue-preview {
+    margin-top: 3rem;
+  }
+
+  .retreat-venue-preview img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .retreat-venue-preview figcaption {
+    text-align: left;
+  }
+
+  .retreat-facts {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .retreat-facts div,
+  .retreat-facts div + div,
+  .retreat-facts div:nth-child(3) {
+    grid-column: 1;
+    border-top: 1px solid rgba(75, 53, 40, 0.2);
+  }
+
+  .retreat-included {
+    margin-inline: -1.15rem;
+    padding: 2.25rem 1.15rem;
+  }
+
+  .retreat-booking-note {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  .retreat-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 270px 210px;
+  }
+
+  .retreat-gallery-main {
+    grid-column: 1;
+  }
+
+  .retreat-taster h2 {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .retreat-closing {
+    min-height: 390px;
+  }
+
+  .retreat-closing h2 {
+    font-size: clamp(2.2rem, 9.5vw, 3rem);
+  }
+}
