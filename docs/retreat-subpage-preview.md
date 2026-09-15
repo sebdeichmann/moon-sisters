@@ -73,4 +73,16 @@ Recreate and polish the supplied Lovable retreat page as a compelling Moon Siste
 - Browser verified at 390 px, 768 px and 1440 px: seven working FAQs, Frauenabend invitation and target anchor, no horizontal overflow, loaded fonts and no console errors.
 - Preview response carries `X-Robots-Tag: noindex, nofollow`.
 
-Preview only. Do not push to `main` or deploy to `moon-sisters.de` until Julie explicitly approves this exact preview.
+Preview phase completed and explicitly approved by Julie. Production release details follow.
+
+## Production release
+
+- Julie explicitly approved publication and supplied the Frauenabend registration URL on 15 September 2026.
+- Main-page Frauenabend CTA: “Platz sichern” now opens the supplied Brevo registration form.
+- Main-page retreat CTA: “Mehr zum Retreat” now opens `/retreat/`; the redundant secondary retreat link was removed.
+- Approved content commit: `ac8233506b13da367133e7b415c3930ad93aca9d`.
+- Static-route fix commit: `8ddc28ddefaf664ed971775bd6c2118b51b1fe20`.
+- GitHub Action: `https://github.com/sebdeichmann/moon-sisters/actions/runs/34971894414` — completed successfully, including build and FTP deployment.
+- Live page: `https://www.moon-sisters.de/retreat/` — externally verified HTTP 200.
+- Live browser verification passed at 390 px, 768 px and 1440 px with the approved content, seven working FAQs, correct homepage CTAs, loaded fonts, no horizontal overflow and no console errors.
+- The first production upload exposed a hosting-specific 404 because All-Inkl had no SPA fallback for the new route. The build now creates `dist/retreat/index.html`, making direct visits and refreshes work under static hosting.
