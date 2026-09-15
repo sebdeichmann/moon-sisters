@@ -139,6 +139,7 @@
           "Alle Frauen sind willkommen. 🏳️‍🌈"
         ],
         "cta": "Platz sichern",
+        "ctaHref": "https://b175e876.sibforms.com/serve/MUIFAIrQzXSmZ3_hDuh04BWYHFdoYHLxHU5WUF0QksQsdkhSKSwcATlLOdyrYnRFa0H-i4u4d2I743g68q5rJ8vvRL8cfgnNUN7GKf3Hb8_1RHCfUFf2hGemafsL0vvJdDmaX0LQpjd02pnqlFCy-n7yghUgPWsJPfB8KzJZUJSDP_HyIxCbohFW2SmMrRoHh6W8tl_wyi69oSrAUg==",
         "ctaSubject": "Anmeldung Frauenabend 29.09.",
         "note": "",
         "expiresAfter": "2026-09-29"
@@ -216,10 +217,9 @@
           "Mal langsam und still. Mal wild und verspielt. Gemeinsam mit anderen Frauen und mit Raum für dich.",
           "Ein Wochenende, an dem nichts Besonderes passieren muss – und gerade deshalb ziemlich viel entstehen darf."
         ],
-        "cta": "Interesse am Retreat anmelden",
+        "cta": "Mehr zum Retreat",
+        "ctaHref": "/retreat/",
         "ctaSubject": "Interesse Retreat zum Durchatmen",
-        "pageHref": "/retreat/",
-        "pageLabel": "Mehr zum Retreat",
         "note": "",
         "imageFit": "contain"
       }

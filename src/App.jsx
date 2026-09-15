@@ -321,9 +321,13 @@ function OfferCard({ offer, contactEmail }) {
         {(offer.cta || offer.note) && (
           <div className="cta-row">
             {offer.cta && (
-              <MailLink className="button" email={contactEmail} subject={offer.ctaSubject}>
-                {offer.cta}
-              </MailLink>
+              offer.ctaHref ? (
+                <a className="button" href={offer.ctaHref}>{offer.cta}</a>
+              ) : (
+                <MailLink className="button" email={contactEmail} subject={offer.ctaSubject}>
+                  {offer.cta}
+                </MailLink>
+              )
             )}
             {offer.note && <span>{offer.note}</span>}
           </div>
