@@ -46,9 +46,9 @@ Recreate and polish the supplied Lovable retreat page as a compelling Moon Siste
 
 ## Preview release
 
-- Source commit used for the tested build: `146b3c4`
-- Netlify deploy ID: `6aa814cf19353719939c09b1`
-- Review URL: `https://6aa814cf19353719939c09b1--moon-sisters-superjana-preview.netlify.app/retreat/`
+- Source commit used for the revised tested build: `1d2e647`
+- Netlify deploy ID: `6aa91cab70dd7a63cc81294e`
+- Review URL: `https://6aa91cab70dd7a63cc81294e--moon-sisters-superjana-preview.netlify.app/retreat/`
 - Externally verified: HTTP 200 for the retreat, home, legal routes, hero image, venue image and favicon
 - Browser verified at 390 px, 768 px and 1440 px: expected content, no horizontal overflow, fonts loaded and no console errors
 - Preview response carries `X-Robots-Tag: noindex, nofollow` and has no unintended login wall
