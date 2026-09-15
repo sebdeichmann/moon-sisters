@@ -6,9 +6,10 @@
     "horizontal_overflow": false,
     "scroll_width": 375,
     "client_width": 375,
-    "body_height": 12799,
+    "body_height": 13581,
     "booking_links": 6,
     "home_links": 2,
+    "taster_links": 1,
     "faq_count": 7,
     "faq_opens": true,
     "content_checks": true,
@@ -22,9 +23,10 @@
     "horizontal_overflow": false,
     "scroll_width": 753,
     "client_width": 753,
-    "body_height": 10781,
+    "body_height": 11665,
     "booking_links": 6,
     "home_links": 2,
+    "taster_links": 1,
     "faq_count": 7,
     "faq_opens": true,
     "content_checks": true,
@@ -38,9 +40,10 @@
     "horizontal_overflow": false,
     "scroll_width": 1425,
     "client_width": 1425,
-    "body_height": 12129,
+    "body_height": 12422,
     "booking_links": 6,
     "home_links": 2,
+    "taster_links": 1,
     "faq_count": 7,
     "faq_opens": true,
     "content_checks": true,
@@ -53,5 +56,10 @@
       "Mehr zum Retreat →"
     ],
     "main_to_retreat_ok": true
+  },
+  {
+    "frauenabend_anchor_found": true,
+    "frauenabend_anchor_viewport_top": 176,
+    "frauenabend_anchor_visible": true
   }
 ]
