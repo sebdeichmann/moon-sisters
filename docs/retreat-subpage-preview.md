@@ -64,12 +64,12 @@ Recreate and polish the supplied Lovable retreat page as a compelling Moon Siste
 
 ### Current editorial review build
 
-- Source commit: `4ce3a42`
-- Netlify deploy ID: `6aa92a5fdd82bb632883afdf`
-- Review URL: `https://6aa92a5fdd82bb632883afdf--moon-sisters-superjana-preview.netlify.app/retreat/`
+- Source commit: `31b3fcd`
+- Netlify deploy ID: `6aa92ce42329e4016eae8981`
+- Review URL: `https://6aa92ce42329e4016eae8981--moon-sisters-superjana-preview.netlify.app/retreat/`
 - Final small review changes: calmer type transitions below “Weniger müssen”, more whitespace between text modes, and all dividers removed from “Was dich erwartet”.
-- Added Julie's two Alte Schule photographs to the venue section after cropping away embedded black bars and incidental packaging; they replace the previous venue pair rather than lengthening the page.
-- Externally verified: HTTP 200 for the retreat, home, legal routes and both supplied venue photographs.
+- Added Julie's two Alte Schule photographs to the venue section after cropping away embedded black bars and incidental packaging. The original movement-room and kitchen photographs remain in place; the venue gallery now contains all four images.
+- Externally verified: HTTP 200 for the retreat and all four venue photographs; the deployed DOM contains all four images at stable responsive dimensions.
 - Browser verified at 390 px, 768 px and 1440 px: seven working FAQs, Frauenabend invitation and target anchor, no horizontal overflow, loaded fonts and no console errors.
 - Preview response carries `X-Robots-Tag: noindex, nofollow`.
 
