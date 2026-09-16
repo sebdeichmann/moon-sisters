@@ -794,6 +794,10 @@ figcaption {
     min-height: 0;
   }
 
+  .offer-card-featured.offer-card-poster .offer-card-image img {
+    aspect-ratio: 4 / 5;
+  }
+
   .testimonial-card {
     flex-basis: min(82vw, 360px);
   }
