@@ -20,7 +20,11 @@ For future poster artwork use:
 - essential lettering and logos at least 100 px inside every edge
 - no essential small body copy baked into the image
 
-The replacement retreat poster still needs to be supplied. Once received, normalize the poster-specific responsive media treatment and verify both the Frauenabend and retreat artwork together.
+All three supplied posters have now been normalized to 1200 × 1500 px WebP files. The retreat poster's accidental top-right image fragment was removed by reconstructing the adjacent window area; the repair was visually checked at full size and in the rendered card.
+
+The generic Frauenkreis photograph was replaced with the supplied Frauenkreis poster. Poster cards use a 4:5 mobile media area; photographic cards retain their existing landscape crop.
+
+Generic testimonial captions such as “Teilnehmerin” were removed from the content, rendering component, translation map and CMS schema. Quotes now stand alone.
 
 ## Verification
 
@@ -32,7 +36,8 @@ The replacement retreat poster still needs to be supplied. Once received, normal
 
 ## Private preview
 
-- Source commit: `674a1bc`
-- Netlify deploy ID: `6aa94e8f5569f74594313e50`
-- URL: `https://6aa94e8f5569f74594313e50--moon-sisters-superjana-preview.netlify.app/`
-- Preview only; do not publish this layout revision before Julie approves it, ideally together with the replacement retreat artwork.
+- Source commit: `8091b2a`
+- Netlify deploy ID: `6aaaefb28f7badade02afe6e`
+- URL: `https://6aaaefb28f7badade02afe6e--moon-sisters-superjana-preview.netlify.app/`
+- Remote verification confirms three poster cards, three 1200 × 1500 natural image dimensions, zero testimonial captions, correct homepage CTAs, no horizontal overflow and no console errors.
+- Preview only; do not publish this revision before Julie explicitly approves it.
