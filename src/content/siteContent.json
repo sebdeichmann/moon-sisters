@@ -65,40 +65,31 @@
     "title": "Stimmen aus unseren Räumen",
     "items": [
       {
-        "quote": "Brauchst du einen Frauenkreis in tiefer Verbundenheit, Entspannung, eine gewisse Magie? Dann geh unbedingt zu den Moon Sisters.",
-        "author": "Teilnehmerin"
+        "quote": "Brauchst du einen Frauenkreis in tiefer Verbundenheit, Entspannung, eine gewisse Magie? Dann geh unbedingt zu den Moon Sisters."
       },
       {
-        "quote": "Es ist ein Kreis, in dem man einfach sein kann, ohne Wertung, ohne Muss.",
-        "author": "Teilnehmerin"
+        "quote": "Es ist ein Kreis, in dem man einfach sein kann, ohne Wertung, ohne Muss."
       },
       {
-        "quote": "Du kannst viele Dinge über dich lernen und auch sehen, wie andere Menschen dich wahrnehmen. Es ist ein guter Ort, um wieder bei dir anzukommen.",
-        "author": "Teilnehmerin"
+        "quote": "Du kannst viele Dinge über dich lernen und auch sehen, wie andere Menschen dich wahrnehmen. Es ist ein guter Ort, um wieder bei dir anzukommen."
       },
       {
-        "quote": "Komm einfach mal mit und fühle, ob es etwas für dich ist. Hier darfst du einfach sein, ganz ohne Bewertung.",
-        "author": "Teilnehmerin"
+        "quote": "Komm einfach mal mit und fühle, ob es etwas für dich ist. Hier darfst du einfach sein, ganz ohne Bewertung."
       },
       {
-        "quote": "Hier wird dein Gedankenkarussell komprimiert und du gehst beseelt nach Hause.",
-        "author": "Teilnehmerin"
+        "quote": "Hier wird dein Gedankenkarussell komprimiert und du gehst beseelt nach Hause."
       },
       {
-        "quote": "Ein Raum, wo ich mir selbst und zugleich anderen Frauen offen begegnen kann. Das hat eine ganz besondere Energie.",
-        "author": "Teilnehmerin"
+        "quote": "Ein Raum, wo ich mir selbst und zugleich anderen Frauen offen begegnen kann. Das hat eine ganz besondere Energie."
       },
       {
-        "quote": "Ein Ort, an dem ich ankommen und zur Ruhe kommen kann. Ein Ort, an dem ich gehört werde und höre.",
-        "author": "Teilnehmerin"
+        "quote": "Ein Ort, an dem ich ankommen und zur Ruhe kommen kann. Ein Ort, an dem ich gehört werde und höre."
       },
       {
-        "quote": "Ihr seid meine Achtsamkeitsmusen!",
-        "author": "Teilnehmerin"
+        "quote": "Ihr seid meine Achtsamkeitsmusen!"
       },
       {
-        "quote": "Gegenseitige Inspiration, Warmherzigkeit, Verstehen, Spaß und Lebensfreude geben Mut und Kraft.",
-        "author": "Teilnehmerin"
+        "quote": "Gegenseitige Inspiration, Warmherzigkeit, Verstehen, Spaß und Lebensfreude geben Mut und Kraft."
       }
     ]
   },
@@ -147,8 +138,9 @@
       {
         "tag": "Frauenkreise",
         "title": "Frauenkreise",
-        "image": "/assets/circle-cushions.jpg",
-        "imageAlt": "Frauenkreis mit achtsamer Atmosphäre",
+        "image": "/assets/generated/frauenkreis-bad-oldesloe-poster.webp",
+        "imageAlt": "Moon-Sisters-Poster für den Frauenkreis in Bad Oldesloe mit vorbereitetem Kreis, Blumen und Kerzen",
+        "imageFit": "contain",
         "intro": "Ein regelmäßiger Raum für Frauen, die ankommen, auftanken und sich selbst und anderen ehrlich begegnen möchten.",
         "facts": [
           {
@@ -185,6 +177,7 @@
         "note": ""
       },
       {
+        "featured": true,
         "tag": "Retreat",
         "title": "Retreat zum Durchatmen",
         "image": "/assets/generated/retreat-november-2026-poster.webp",

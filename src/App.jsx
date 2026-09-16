@@ -79,7 +79,6 @@ const translations = {
   'Mehr zu Nina →': 'More about Nina →',
 
   'Was Frauen mitnehmen': 'What women take with them',
-  'Teilnehmerin': 'Participant',
   'Brauchst du einen Frauenkreis in tiefer Verbundenheit, Entspannung, eine gewisse Magie? Dann geh unbedingt zu den Moon Sisters.': 'If you need a women’s circle with deep connection, relaxation and a certain kind of magic, definitely go to Moon Sisters.',
   'Es ist ein Kreis, in dem man einfach sein kann, ohne Wertung, ohne Muss.': 'It is a circle where you can simply be, without judgment, without having to do anything.',
   'Du kannst viele Dinge über dich lernen und auch sehen, wie andere Menschen dich wahrnehmen. Es ist ein guter Ort, um wieder bei dir anzukommen.': 'You can learn many things about yourself and also see how other people perceive you. It is a good place to arrive back in yourself.',
@@ -446,9 +445,8 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
           <SectionHeading label={content.testimonials.label} title={content.testimonials.title} />
           <div className="testimonial-grid">
             {content.testimonials.items.map((item, index) => (
-              <figure className="testimonial-card" key={`${item.author}-${index}`}>
+              <figure className="testimonial-card" key={`${item.quote}-${index}`}>
                 <blockquote>„{item.quote}“</blockquote>
-                <figcaption>— {item.author}</figcaption>
               </figure>
             ))}
           </div>

@@ -409,7 +409,12 @@ p {
 }
 
 .offer-card-poster .offer-card-image {
-  background: #f3e5d6;
+  border-color: transparent;
+  background: transparent;
+}
+
+.offer-card-poster .offer-card-image::after {
+  display: none;
 }
 
 .offer-card-poster .offer-card-image img {
