@@ -22,7 +22,7 @@ For future poster artwork use:
 
 All three supplied posters have now been normalized to 1200 × 1500 px WebP files. The retreat poster's accidental top-right image fragment was removed by reconstructing the adjacent window area; the repair was visually checked at full size and in the rendered card.
 
-The generic Frauenkreis photograph was replaced with the supplied Frauenkreis poster. Poster cards use a 4:5 mobile media area; photographic cards retain their existing landscape crop.
+The generic Frauenkreis photograph was replaced with the supplied Frauenkreis poster. All poster files retain their 4:5 source canvas but are fitted with `object-fit: contain` inside the established offer-image frames. The frames do not expand to the poster ratio; at the 390 px mobile test viewport all three measure 339 × 212 px.
 
 Generic testimonial captions such as “Teilnehmerin” were removed from the content, rendering component, translation map and CMS schema. Quotes now stand alone.
 
@@ -36,8 +36,8 @@ Generic testimonial captions such as “Teilnehmerin” were removed from the co
 
 ## Private preview
 
-- Source commit: `8091b2a`
-- Netlify deploy ID: `6aaaefb28f7badade02afe6e`
-- URL: `https://6aaaefb28f7badade02afe6e--moon-sisters-superjana-preview.netlify.app/`
+- Source commit: `0050303`
+- Netlify deploy ID: `6aaaf296819138ac67dca775`
+- URL: `https://6aaaf296819138ac67dca775--moon-sisters-superjana-preview.netlify.app/`
 - Remote verification confirms three poster cards, three 1200 × 1500 natural image dimensions, zero testimonial captions, correct homepage CTAs, no horizontal overflow and no console errors.
 - Preview only; do not publish this revision before Julie explicitly approves it.
