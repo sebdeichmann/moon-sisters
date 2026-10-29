@@ -158,6 +158,10 @@
           {
             "label": "Status",
             "value": "Aktueller Kreis voll"
+          },
+          {
+            "label": "Gruppengröße",
+            "value": "max. 10 Teilnehmerinnen"
           }
         ],
         "paragraphs": [
@@ -187,11 +191,12 @@
       "fullHeading": "Der aktuelle Kreis ist voll.",
       "nextText": "Du möchtest beim nächsten Kreis dabei sein? Wir geben dir gern Bescheid.",
       "emailLabel": "Oder schreib uns eine E-Mail",
-      "detailsLabel": "Über den Kreis & aktuelle Termine",
+      "detailsLabel": "Mehr über unsere Frauenkreise",
       "statusLabel": "Status",
       "currentCycleLabel": "Angaben und Termine beziehen sich auf den aktuellen, bereits vollen Kreis.",
       "posterLabel": "Unser Plakat ansehen",
-      "posterHint": "In voller Größe öffnen"
+      "posterHint": "In voller Größe öffnen",
+      "datesLabel": "Termine"
     }
   },
   "legal": {

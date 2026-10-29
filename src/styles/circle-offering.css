@@ -1,14 +1,27 @@
 .circle-offering {
   display: grid;
   grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
-  grid-template-areas: 'photo intro' 'photo invitation' 'poster details';
+  grid-template-areas: 'visual intro' 'visual invitation' 'visual details';
   column-gap: clamp(2.5rem, 6vw, 5rem);
   row-gap: 0;
   align-items: start;
   scroll-margin-top: 8rem;
 }
 
+.circle-offering-visual { grid-area: visual; }
 .circle-offering-intro { grid-area: intro; }
+.circle-visible-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: .9rem 1.4rem;
+  margin: 0 0 1.5rem;
+  color: var(--muted-strong);
+  font-size: .94rem;
+}
+.circle-visible-facts .circle-dates { grid-column: 1 / -1; }
+.circle-visible-facts dt { color: #623242; font-size: .78rem; font-weight: 600; }
+.circle-visible-facts dd { margin: .25rem 0 0; }
+
 .circle-offering-intro h2 {
   margin: 0 0 1.2rem;
   font-family: 'Newsreader', Georgia, serif;
@@ -93,6 +106,7 @@
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: 'intro' 'photo' 'invitation' 'details' 'poster';
   }
+  .circle-offering-visual { display: contents; }
   .circle-offering-intro h2 { max-width: 17ch; }
   .circle-offering-photo { margin-bottom: 1.5rem; }
   .circle-offering-invitation { padding-top: 1.3rem; }
