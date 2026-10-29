@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { dateKeyInTimeZone, isOfferVisibleOnDateKey } from './utils/dateVisibility.js';
 import './styles/updates.css';
+import './styles/contact-newsletter.css';
 import CircleOffering from './CircleOffering.jsx';
 
 const translations = {
@@ -518,6 +519,13 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
               <img src="/assets/generated/contact-letter-tea-generated.png" alt="Brief, Tee und getrocknete Blumen auf einem warmen Holztisch" loading="lazy" />
             </figure>
           </div>
+          <aside className="contact-newsletter" aria-labelledby="contact-newsletter-title">
+            <div>
+              <h3 id="contact-newsletter-title">{content.newsletter.title}</h3>
+              <p>{content.newsletter.text}</p>
+            </div>
+            <a className="button" href={content.newsletter.href}>{content.newsletter.cta}</a>
+          </aside>
         </section>
       </main>
 

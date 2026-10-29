@@ -1,0 +1,55 @@
+.contact-newsletter {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.25rem 2.5rem;
+  margin-top: 1.25rem;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border-radius: 6px;
+  background: #753f50;
+  color: #fff9ef;
+}
+
+.contact-newsletter h3 {
+  margin: 0 0 .65rem;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(1.65rem, 2.6vw, 2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: inherit;
+}
+
+.contact-newsletter p {
+  max-width: 68ch;
+  margin: 0;
+  font-size: .94rem;
+  line-height: 1.75;
+  color: inherit;
+}
+
+.contact-newsletter .button {
+  max-width: 100%;
+  background: #fff9ef;
+  border-color: #fff9ef;
+  color: #623242;
+  box-shadow: none;
+  font-size: .9rem;
+  white-space: normal;
+  text-align: center;
+}
+
+.contact-newsletter .button:hover {
+  background: #f4e3e6;
+  border-color: #f4e3e6;
+  color: #512535;
+}
+
+.contact-newsletter .button:focus-visible {
+  outline: 3px solid #fff9ef;
+  outline-offset: 5px;
+}
+
+@media (max-width: 760px) {
+  .contact-newsletter { grid-template-columns: minmax(0, 1fr); }
+  .contact-newsletter .button { justify-self: start; }
+}

@@ -182,7 +182,8 @@
         "nextCircleText": "Du möchtest beim nächsten Kreis dabei sein? Über unseren Newsletter erfährst du, wenn sich ein neuer Kreis öffnet. Oder schreib uns, damit wir dir Bescheid geben können.",
         "newsletterCta": "Vom nächsten Kreis erfahren",
         "nextCircleEmail": "Schreibt mir, wenn ein neuer Kreis beginnt",
-        "nextCircleSubject": "Interesse am nächsten Frauenkreis"
+        "nextCircleSubject": "Interesse am nächsten Frauenkreis",
+        "showPoster": false
       }
     ],
     "circleLayout": {

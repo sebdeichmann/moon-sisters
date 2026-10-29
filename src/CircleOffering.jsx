@@ -9,10 +9,12 @@ export default function CircleOffering({ offer, layout, newsletter, contactEmail
         <figure className="circle-offering-photo">
           <img src="/assets/frauenkreis-centre.webp" width="1280" height="960" alt={layout.photoAlt} loading="lazy" />
         </figure>
+        {offer.showPoster !== false && (
         <a className="circle-offering-poster" href={offer.image} target="_blank" rel="noopener noreferrer">
           <img src={offer.image} width="1200" height="1500" alt={offer.imageAlt} loading="lazy" />
           <span>{layout.posterLabel}<span className="circle-poster-hint">{layout.posterHint}</span></span>
         </a>
+        )}
       </div>
 
       <div className="circle-offering-intro">
