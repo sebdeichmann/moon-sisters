@@ -1,5 +1,5 @@
 .newsletter-band {
-  background: #4f5c50;
+  background: #753f50;
   color: #fff9ef;
   scroll-margin-top: 7rem;
 }
@@ -33,15 +33,15 @@
 
 .newsletter-band .button {
   background: #fff9ef;
-  color: #344337;
+  color: #623242;
   border-color: #fff9ef;
   box-shadow: none;
 }
 
 .newsletter-band .button:hover {
-  background: #e6eddf;
-  border-color: #e6eddf;
-  color: #26372b;
+  background: #f4e3e6;
+  border-color: #f4e3e6;
+  color: #512535;
 }
 
 .newsletter-band a:focus-visible {
@@ -49,42 +49,48 @@
   outline-offset: 5px;
 }
 
-.offer-card-copy .circle-full-label {
-  display: inline-flex;
-  align-items: center;
-  gap: .65rem;
-  margin: .3rem 0 1.1rem;
-  padding: .55rem 1rem;
-  border: 1px solid #cfa58b;
-  border-radius: 999px;
-  background: #f1dfcf;
-  color: #663d2b;
-  font-size: .94rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.circle-full-label::before {
-  content: '';
-  width: .7rem;
-  height: .7rem;
-  flex: 0 0 .7rem;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-}
-
 .next-circle-invitation {
-  margin: 1.4rem 0 2rem;
+  margin: 1.5rem 0 2rem;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  background: #f2e3e5;
+  color: #623242;
+  border-radius: 6px;
 }
 
-.next-circle-invitation > p {
-  max-width: 55ch;
+.next-circle-invitation h4 {
+  margin: 0 0 .8rem;
+  color: #623242;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.offer-card-copy .next-circle-invitation > p {
+  max-width: 48ch;
+  color: #623242;
+  margin: 0 0 1.3rem;
+}
+
+.next-circle-invitation .button {
+  background: #753f50;
+  border-color: #753f50;
+  color: #fff9ef;
+  box-shadow: none;
+}
+
+.next-circle-invitation .button:hover {
+  background: #623242;
+  border-color: #623242;
+  color: #fff9ef;
 }
 
 .next-circle-invitation .text-link {
   display: block;
   width: fit-content;
   margin-top: 1rem;
+  color: #623242;
+  font-size: .9rem;
 }
 
 @media (max-width: 700px) {

@@ -292,7 +292,7 @@ function Footer({ content, language }) {
   );
 }
 
-function OfferCard({ offer, contactEmail }) {
+function OfferCard({ offer, contactEmail, newsletter }) {
   return (
     <article id={offer.id} className={`offer-card soft-panel${offer.cycles || offer.featured ? ' offer-card-featured' : ''}${offer.imageFit === 'contain' ? ' offer-card-poster' : ''}`}>
       <figure className="image-frame offer-card-image">
@@ -301,12 +301,12 @@ function OfferCard({ offer, contactEmail }) {
       <div className="offer-card-copy">
         <p className="card-label">{offer.tag}</p>
         <h3>{offer.title}</h3>
-        {offer.full && <p className="circle-full-label">{offer.fullLabel}</p>}
         <p className="offer-intro">{offer.intro}</p>
         {offer.full && (
           <div className="next-circle-invitation">
+            <h4>{offer.fullLabel}</h4>
             <p>{offer.nextCircleText}</p>
-            <a className="button" href="#newsletter">{offer.newsletterCta}</a>
+            <a className="button" href={newsletter.href}>{newsletter.cta}</a>
             <MailLink className="text-link" email={contactEmail} subject={offer.nextCircleSubject}>
               {offer.nextCircleEmail}
             </MailLink>
@@ -449,7 +449,7 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
 
           <div className="offer-grid">
             {visibleOffers.map((offer) => (
-              <OfferCard key={offer.id ?? offer.title} offer={offer} contactEmail={contactEmail} />
+              <OfferCard key={offer.id ?? offer.title} offer={offer} contactEmail={contactEmail} newsletter={content.newsletter} />
             ))}
           </div>
         </section>
