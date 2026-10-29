@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { dateKeyInTimeZone, isOfferVisibleOnDateKey } from './utils/dateVisibility.js';
 import './styles/updates.css';
+import CircleOffering from './CircleOffering.jsx';
 
 const translations = {
   'Ein kleiner Moment für dich': 'A little moment for you',
@@ -17,6 +18,15 @@ const translations = {
   'Neuigkeiten von Moon Sisters und Einladungen zu unseren Frauenkreisen und Veranstaltungen – direkt in dein Postfach.': 'News from Moon Sisters and invitations to our women’s circles and events – straight to your inbox.',
   'Zum Newsletter anmelden': 'Sign up for the newsletter',
   'Du möchtest dich für einen Frauenkreis anmelden oder hast eine Frage? Schreib uns gern eine kurze Nachricht.': 'Would you like to register for a women’s circle or do you have a question? Feel free to send us a short message.',
+  'Frauenkreis in Bad Oldesloe': 'Women’s circle in Bad Oldesloe',
+  'Vorbereiteter Frauenkreis mit Blumen, Kerzen und buntem Tuch': 'A prepared women’s circle with flowers, candles and a colourful cloth',
+  'Der aktuelle Kreis ist voll.': 'The current circle is full.',
+  'Du möchtest beim nächsten Kreis dabei sein? Wir geben dir gern Bescheid.': 'Would you like to join the next circle? We’d love to let you know.',
+  'Oder schreib uns eine E-Mail': 'Or send us an email',
+  'Über den Kreis & aktuelle Termine': 'About the circle & current dates',
+  'Angaben und Termine beziehen sich auf den aktuellen, bereits vollen Kreis.': 'These details and dates refer to the current circle, which is already full.',
+  'Unser Plakat ansehen': 'See our poster',
+  'In voller Größe öffnen': 'Open full size',
   'Home': 'Home',
   'Angebote': 'Offerings',
   'Über uns': 'About',
@@ -437,6 +447,9 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
           </div>
         </section>
 
+        {visibleOffers.length === 1 && visibleOffers[0].cycles && visibleOffers[0].full ? (
+          <CircleOffering offer={visibleOffers[0]} layout={content.offers.circleLayout} newsletter={content.newsletter} contactEmail={contactEmail} />
+        ) : (
         <section className="offers section-shell" id="angebote" aria-labelledby="offers-title">
           <div className="offers-top">
             <SectionHeading label={content.offers.label} title={content.offers.title}>
@@ -453,6 +466,7 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
             ))}
           </div>
         </section>
+        )}
 
         <section className="about section-shell" id="ueber-uns" aria-labelledby="about-title">
           <SectionHeading label={content.about.label} title={content.about.title}>

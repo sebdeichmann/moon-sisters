@@ -180,7 +180,19 @@
         "nextCircleEmail": "Schreibt mir, wenn ein neuer Kreis beginnt",
         "nextCircleSubject": "Interesse am nächsten Frauenkreis"
       }
-    ]
+    ],
+    "circleLayout": {
+      "title": "Frauenkreis in Bad Oldesloe",
+      "photoAlt": "Vorbereiteter Frauenkreis mit Blumen, Kerzen und buntem Tuch",
+      "fullHeading": "Der aktuelle Kreis ist voll.",
+      "nextText": "Du möchtest beim nächsten Kreis dabei sein? Wir geben dir gern Bescheid.",
+      "emailLabel": "Oder schreib uns eine E-Mail",
+      "detailsLabel": "Über den Kreis & aktuelle Termine",
+      "statusLabel": "Status",
+      "currentCycleLabel": "Angaben und Termine beziehen sich auf den aktuellen, bereits vollen Kreis.",
+      "posterLabel": "Unser Plakat ansehen",
+      "posterHint": "In voller Größe öffnen"
+    }
   },
   "legal": {
     "impressum": {

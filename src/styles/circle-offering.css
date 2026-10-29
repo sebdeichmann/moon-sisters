@@ -1,0 +1,101 @@
+.circle-offering {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
+  grid-template-areas: 'photo intro' 'photo invitation' 'poster details';
+  column-gap: clamp(2.5rem, 6vw, 5rem);
+  row-gap: 0;
+  align-items: start;
+  scroll-margin-top: 8rem;
+}
+
+.circle-offering-intro { grid-area: intro; }
+.circle-offering-intro h2 {
+  margin: 0 0 1.2rem;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(2.45rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.circle-offering-intro p {
+  max-width: 46ch;
+  margin: 0 0 1.6rem;
+  color: var(--muted-strong);
+  font-size: 1.03rem;
+}
+.circle-offering-photo { grid-area: photo; margin: 0; }
+.circle-offering-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.circle-offering-invitation {
+  grid-area: invitation;
+  border-top: 1px solid #dfcdd0;
+  padding: 1.4rem 0 1.7rem;
+}
+.circle-offering-invitation h3 {
+  margin: 0 0 .75rem;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(1.55rem, 2.5vw, 1.9rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #623242;
+}
+.circle-offering-invitation p { margin: 0 0 1.3rem; max-width: 45ch; color: var(--muted-strong); }
+.circle-offering .circle-signup { background: #753f50; border-color: #753f50; color: #fff9ef; box-shadow: none; }
+.circle-offering .circle-signup:hover { background: #623242; border-color: #623242; color: #fff9ef; }
+.circle-email { display: block; width: fit-content; margin-top: .9rem; color: #623242; font-size: .9rem; }
+.circle-offering-details { grid-area: details; border-block: 1px solid #dfcdd0; }
+.circle-offering-details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-height: 60px;
+  padding-block: .7rem;
+  cursor: pointer;
+  list-style: none;
+  color: #623242;
+  font-size: .9rem;
+  font-weight: 500;
+}
+.circle-offering-details summary::-webkit-details-marker { display: none; }
+.circle-offering-details summary::after { content: '+'; font-size: 1.5rem; font-weight: 400; }
+.circle-offering-details[open] summary::after { content: '−'; }
+.circle-offering-details summary:focus-visible { outline: 3px solid #753f50; outline-offset: 4px; }
+.circle-details-body { padding-bottom: 1rem; color: var(--muted-strong); font-size: .94rem; }
+.circle-details-body p { margin: 0 0 1rem; }
+.circle-details-body dl { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.circle-details-body dt { color: #623242; font-weight: 600; font-size: .8rem; }
+.circle-details-body dd { margin: .2rem 0 0; }
+.circle-details-body .circle-cycle-note { color: #623242; font-size: .85rem; }
+.circle-offering-poster {
+  grid-area: poster;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 1.5rem;
+  color: #623242;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.circle-offering-poster img { width: 68px; height: 85px; flex: 0 0 68px; object-fit: contain; }
+.circle-offering-poster > span { text-decoration: underline; text-underline-offset: .25em; }
+.circle-poster-hint { display: block; margin-top: .3rem; color: var(--muted-strong); font-size: .8rem; }
+.circle-offering-poster:hover { color: #512535; }
+
+@media (max-width: 760px) {
+  .circle-offering {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'intro' 'photo' 'invitation' 'details' 'poster';
+  }
+  .circle-offering-intro h2 { max-width: 17ch; }
+  .circle-offering-photo { margin-bottom: 1.5rem; }
+  .circle-offering-invitation { padding-top: 1.3rem; }
+  .circle-offering .circle-signup { max-width: 100%; text-align: center; white-space: normal; }
+  .circle-offering-poster { margin-top: 1.7rem; }
+}
