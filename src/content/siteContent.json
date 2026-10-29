@@ -2,7 +2,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Schreib uns – wir freuen uns.",
-    "text": "Du möchtest dich für einen Frauenkreis anmelden, hast Interesse am Retreat oder eine Frage? Schreib uns gern eine kurze Nachricht."
+    "text": "Du möchtest dich für einen Frauenkreis anmelden oder hast eine Frage? Schreib uns gern eine kurze Nachricht."
   },
   "nav": [
     {
@@ -156,8 +156,8 @@
             "value": "150 €"
           },
           {
-            "label": "Anmeldung",
-            "value": "per E-Mail"
+            "label": "Status",
+            "value": "Aktueller Kreis voll"
           }
         ],
         "paragraphs": [
@@ -167,54 +167,18 @@
         "cycles": [
           {
             "title": "Frauenkreis 4.0",
-            "dates": "26.10., 2.11., 9.11., 16.11., 23.11., 30.11.",
-            "cta": "Für Frauenkreis 4.0 anmelden",
-            "ctaSubject": "Anmeldung Frauenkreis 4.0"
+            "dates": "26.10., 2.11., 9.11., 16.11., 23.11., 30.11."
           }
         ],
         "cta": "",
         "ctaSubject": "",
-        "note": ""
-      },
-      {
-        "featured": true,
-        "tag": "Retreat",
-        "title": "Retreat zum Durchatmen",
-        "image": "/assets/generated/retreat-november-2026-poster.webp",
-        "imageAlt": "Moon-Sisters-Motiv für das Frauen-Retreat in der Alten Schule Bordelum",
-        "intro": "Ein Retreat für Frauen, die mehr bei sich ankommen wollen.",
-        "facts": [
-          {
-            "label": "Datum",
-            "value": "13.–15. November 2026"
-          },
-          {
-            "label": "Ort",
-            "value": "Alte Schule Bordelum, Nordsee"
-          },
-          {
-            "label": "Gruppe",
-            "value": "8–10 Teilnehmerinnen plus Julie & Nina"
-          },
-          {
-            "label": "Kosten",
-            "value": "444 € für die ersten vier Anmeldungen, danach 484 €"
-          }
-        ],
-        "paragraphs": [
-          "Ein Wochenende zum Ankommen. Bewegen. Tanzen. Ausruhen. Gestalten. Kochen. Genießen. Berühren und berührt werden. Draußen sein. Spielen. Feiern. Still werden.",
-          "Und mit viel Raum dazwischen.",
-          "Dieses Retreat ist für dich, wenn du dich danach sehnst, wieder mehr in deinem eigenen Leben anzukommen – es mit allen Sinnen zu erfahren, dich darin lebendig zu fühlen und es aus dir heraus zu gestalten.",
-          "Wenn du klarer spüren möchtest: Was ist meins – und was nicht? Was brauche ich? Was möchte ich? Wo ist mein Ja, mein Nein oder mein Vielleicht?",
-          "Wir laden dich ein, auszuprobieren, zu empfangen, zu genießen und deinen eigenen Impulsen zu folgen.",
-          "Mal langsam und still. Mal wild und verspielt. Gemeinsam mit anderen Frauen und mit Raum für dich.",
-          "Ein Wochenende, an dem nichts Besonderes passieren muss – und gerade deshalb ziemlich viel entstehen darf."
-        ],
-        "cta": "Mehr zum Retreat",
-        "ctaHref": "/retreat/",
-        "ctaSubject": "Interesse Retreat zum Durchatmen",
         "note": "",
-        "imageFit": "contain"
+        "full": true,
+        "fullLabel": "Dieser Kreis ist voll",
+        "nextCircleText": "Du möchtest beim nächsten Kreis dabei sein? Über unseren Newsletter erfährst du, wenn sich ein neuer Kreis öffnet. Oder schreib uns, damit wir dir Bescheid geben können.",
+        "newsletterCta": "Vom nächsten Kreis erfahren",
+        "nextCircleEmail": "Schreibt mir, wenn ein neuer Kreis beginnt",
+        "nextCircleSubject": "Interesse am nächsten Frauenkreis"
       }
     ]
   },
@@ -370,5 +334,11 @@
         "text": "Durch Achtsamkeit, Bewegung, Kreativität und Begegnung entsteht ein Raum, der trägt."
       }
     ]
+  },
+  "newsletter": {
+    "title": "Ein kleiner Moment für dich",
+    "text": "Ab und zu Post von Julie & Nina: kleine Impulse zum Durchatmen und Bei-dir-Ankommen, Gedanken aus unseren Frauenkreisen und Einladungen zu dem, was als Nächstes entsteht.",
+    "cta": "Ja, ich möchte Post von euch",
+    "href": "https://267a9d7e.sibforms.com/serve/MUIFAC1xxD-sVl_0aRJO_rdEjBAE5odv9SAsdg_Au2bIT2p_oPha2zv_GKlJJMNfeKmo0d0DUUAV3LLy7ZjSSysjiNmgG21xR8hm-56c10vWsf2dBxW9LQ3An3xdVlLTX898rDG4Ao78os2n9Zrzb6Az99lRljep6E8_waMrI6EaMn1H3Tf40gg4CyWPELvW6GjYoloC0Ek3JZfrEA=="
   }
 }

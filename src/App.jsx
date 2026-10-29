@@ -1,8 +1,22 @@
 import { useEffect, useState } from 'react';
 import { dateKeyInTimeZone, isOfferVisibleOnDateKey } from './utils/dateVisibility.js';
-import RetreatPage from './RetreatPage.jsx';
+import './styles/updates.css';
 
 const translations = {
+  'Ein kleiner Moment für dich': 'A little moment for you',
+  'Ab und zu Post von Julie & Nina: kleine Impulse zum Durchatmen und Bei-dir-Ankommen, Gedanken aus unseren Frauenkreisen und Einladungen zu dem, was als Nächstes entsteht.': 'An occasional note from Julie & Nina: small invitations to exhale and come back to yourself, reflections from our women’s circles, and invitations to what’s taking shape next.',
+  'Ja, ich möchte Post von euch': 'Yes, I’d love to hear from you',
+  'Dieser Kreis ist voll': 'This circle is full',
+  'Status': 'Status',
+  'Aktueller Kreis voll': 'Current circle full',
+  'Du möchtest beim nächsten Kreis dabei sein? Über unseren Newsletter erfährst du, wenn sich ein neuer Kreis öffnet. Oder schreib uns, damit wir dir Bescheid geben können.': 'Would you like to join the next circle? Our newsletter will let you know when a new circle opens. Or write to us so we can let you know.',
+  'Vom nächsten Kreis erfahren': 'Hear about the next circle',
+  'Schreibt mir, wenn ein neuer Kreis beginnt': 'Let me know when a new circle begins',
+  'Interesse am nächsten Frauenkreis': 'Interest in the next women’s circle',
+  'In Verbindung bleiben': 'Stay connected',
+  'Neuigkeiten von Moon Sisters und Einladungen zu unseren Frauenkreisen und Veranstaltungen – direkt in dein Postfach.': 'News from Moon Sisters and invitations to our women’s circles and events – straight to your inbox.',
+  'Zum Newsletter anmelden': 'Sign up for the newsletter',
+  'Du möchtest dich für einen Frauenkreis anmelden oder hast eine Frage? Schreib uns gern eine kurze Nachricht.': 'Would you like to register for a women’s circle or do you have a question? Feel free to send us a short message.',
   'Home': 'Home',
   'Angebote': 'Offerings',
   'Über uns': 'About',
@@ -287,7 +301,17 @@ function OfferCard({ offer, contactEmail }) {
       <div className="offer-card-copy">
         <p className="card-label">{offer.tag}</p>
         <h3>{offer.title}</h3>
+        {offer.full && <p className="circle-full-label">{offer.fullLabel}</p>}
         <p className="offer-intro">{offer.intro}</p>
+        {offer.full && (
+          <div className="next-circle-invitation">
+            <p>{offer.nextCircleText}</p>
+            <a className="button" href="#newsletter">{offer.newsletterCta}</a>
+            <MailLink className="text-link" email={contactEmail} subject={offer.nextCircleSubject}>
+              {offer.nextCircleEmail}
+            </MailLink>
+          </div>
+        )}
         <dl className="offer-facts">
           {offer.facts.map((fact) => (
             <div key={fact.label}>
@@ -310,9 +334,11 @@ function OfferCard({ offer, contactEmail }) {
               <article className="cycle-card" key={cycle.title}>
                 <h4>{cycle.title}</h4>
                 <p><strong>Termine:</strong> {cycle.dates}</p>
-                <MailLink className="text-link" email={contactEmail} subject={cycle.ctaSubject}>
-                  {cycle.cta}
-                </MailLink>
+                {!offer.full && cycle.cta && (
+                  <MailLink className="text-link" email={contactEmail} subject={cycle.ctaSubject}>
+                    {cycle.cta}
+                  </MailLink>
+                )}
               </article>
             ))}
           </div>
@@ -388,6 +414,16 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
           </figure>
         </section>
 
+        <section className="newsletter-band" id="newsletter" aria-labelledby="newsletter-title">
+          <div className="newsletter-inner section-shell">
+            <h2 id="newsletter-title">{content.newsletter.title}</h2>
+            <div className="newsletter-copy">
+              <p>{content.newsletter.text}</p>
+              <a className="button" href={content.newsletter.href}>{content.newsletter.cta}</a>
+            </div>
+          </div>
+        </section>
+
         <section className="qualities section-shell" aria-labelledby="qualities-title">
           <SectionHeading label={content.qualities.label} title={content.qualities.title} />
           <div className="quality-grid">
@@ -459,6 +495,7 @@ function HomePage({ content, language, setLanguage, currentDateKey }) {
                 {content.contact.text}
               </SectionHeading>
               <MailLink className="contact-mail" email={contactEmail}>{contactLabel}</MailLink>
+
             </div>
             <figure className="contact-image image-frame">
               <img src="/assets/generated/contact-letter-tea-generated.png" alt="Brief, Tee und getrocknete Blumen auf einem warmen Holztisch" loading="lazy" />
@@ -518,11 +555,6 @@ export default function App({ content }) {
   if (path === '/impressum') {
     document.title = language === 'en' ? 'Imprint – Moon Sisters' : 'Impressum – Moon Sisters';
     return <LegalPage content={visibleContent} page={visibleContent.legal.impressum} language={language} setLanguage={setLanguage} />;
-  }
-
-  if (path === '/retreat') {
-    document.title = 'Lass dich vom Leben berühren – Retreat für Frauen | Moon Sisters';
-    return <RetreatPage content={content} />;
   }
 
   document.title = language === 'en'

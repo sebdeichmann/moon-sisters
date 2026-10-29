@@ -1,6 +1,6 @@
 import { copyFile, mkdir } from 'node:fs/promises';
 
-const staticAppRoutes = ['retreat'];
+const staticAppRoutes = [];
 
 await Promise.all(staticAppRoutes.map(async (route) => {
   const routeDirectory = new URL(`../dist/${route}/`, import.meta.url);

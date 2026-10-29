@@ -1,0 +1,110 @@
+.newsletter-band {
+  background: #4f5c50;
+  color: #fff9ef;
+  scroll-margin-top: 7rem;
+}
+
+.newsletter-inner {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  padding-block: clamp(2.75rem, 5vw, 4.5rem);
+}
+
+.newsletter-inner h2 {
+  margin: 0;
+  max-width: 12ch;
+  color: inherit;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.newsletter-copy p {
+  max-width: 51ch;
+  margin: 0 0 1.6rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #fff9ef;
+}
+
+.newsletter-band .button {
+  background: #fff9ef;
+  color: #344337;
+  border-color: #fff9ef;
+  box-shadow: none;
+}
+
+.newsletter-band .button:hover {
+  background: #e6eddf;
+  border-color: #e6eddf;
+  color: #26372b;
+}
+
+.newsletter-band a:focus-visible {
+  outline: 3px solid #fff9ef;
+  outline-offset: 5px;
+}
+
+.offer-card-copy .circle-full-label {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  margin: .3rem 0 1.1rem;
+  padding: .55rem 1rem;
+  border: 1px solid #cfa58b;
+  border-radius: 999px;
+  background: #f1dfcf;
+  color: #663d2b;
+  font-size: .94rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.circle-full-label::before {
+  content: '';
+  width: .7rem;
+  height: .7rem;
+  flex: 0 0 .7rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.next-circle-invitation {
+  margin: 1.4rem 0 2rem;
+}
+
+.next-circle-invitation > p {
+  max-width: 55ch;
+}
+
+.next-circle-invitation .text-link {
+  display: block;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  .newsletter-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .newsletter-inner h2 {
+    max-width: 15ch;
+  }
+
+  .newsletter-copy p {
+    font-size: 1rem;
+  }
+
+  .newsletter-band .button,
+  .next-circle-invitation .button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+}
